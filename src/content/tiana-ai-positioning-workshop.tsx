@@ -172,6 +172,41 @@ function BulletList({ items }: { items: string[] }) {
   )
 }
 
+function WorkshopRecordingCard({
+  title,
+  subtitle,
+  videoId,
+}: {
+  title: string
+  subtitle: string
+  videoId: string
+}) {
+  return (
+    <div className="rounded-[30px] border border-[#7C69C7]/24 bg-[linear-gradient(145deg,rgba(124,105,199,0.14),rgba(255,255,255,0.04))] p-5 md:p-6 shadow-[0_18px_50px_rgba(0,0,0,0.22),inset_0_1px_0_rgba(255,255,255,0.06)]">
+      <div className="mb-4 flex flex-col gap-3 md:flex-row md:items-end md:justify-between">
+        <div>
+          <p className="mb-2 text-[11px] font-semibold uppercase tracking-[0.22em] text-[#F5C3C6]">Bonus Session Recording</p>
+          <h2 className="text-2xl font-bold text-[#FCF4EB] md:text-[2rem]">{title}</h2>
+        </div>
+        <p className="max-w-xl text-sm leading-relaxed text-[#FCF4EB]/58">{subtitle}</p>
+      </div>
+
+      <div className="overflow-hidden rounded-[24px] border border-white/[0.08] bg-black shadow-[0_10px_35px_rgba(0,0,0,0.28)]">
+        <div className="relative w-full overflow-hidden pt-[56.25%]">
+          <iframe
+            className="absolute inset-0 h-full w-full"
+            src={`https://www.youtube.com/embed/${videoId}`}
+            title={title}
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerPolicy="strict-origin-when-cross-origin"
+            allowFullScreen
+          />
+        </div>
+      </div>
+    </div>
+  )
+}
+
 const LEAVE_WITH = [
   'A written positioning statement built using the competitive alternative framework',
   'Clarity on which awareness level your dream client is at and what that means for your content',
@@ -207,6 +242,14 @@ export default function TianaAiPositioningWorkshop() {
               <path d="M6 4h6v6M12 4L4 12" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
             </svg>
           </a>
+        </div>
+
+        <div className="mb-8">
+          <WorkshopRecordingCard
+            title="Watch the May 13 Bonus Session"
+            subtitle="This is the full live recording from the Age of AI bonus workshop for both cohorts, hosted on the Cohort 1 Zoom room."
+            videoId="TfLytZNk3ls"
+          />
         </div>
 
         <details open className="rounded-2xl overflow-hidden border border-white/[0.10] bg-[linear-gradient(145deg,rgba(124,105,199,0.07),rgba(255,255,255,0.03))] shadow-[0_8px_32px_rgba(0,0,0,0.18),inset_0_1px_0_rgba(255,255,255,0.07)]">
