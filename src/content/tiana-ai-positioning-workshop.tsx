@@ -184,7 +184,7 @@ export default function TianaAiPositioningWorkshop() {
     <div className="max-w-5xl mx-auto px-6 pb-16">
       <div className="pt-20 pb-10">
         <div className="mb-5 space-y-2">
-          <p className="text-sm uppercase tracking-[0.22em] text-[#F5C3C6] font-semibold">Created by Tiyana Gori</p>
+          <p className="text-sm uppercase tracking-[0.22em] text-[#F5C3C6] font-semibold">Created by Tiyana Ti</p>
           <p className="text-sm uppercase tracking-[0.22em] text-[#FCF4EB]/74 font-semibold">Adapted by Joe Che</p>
           <p className="text-xs uppercase tracking-[0.24em] text-[#FCF4EB]/45 font-semibold">Adapted by Joe Che for the Masterminds HQ bonus workshop.</p>
         </div>
@@ -228,8 +228,7 @@ export default function TianaAiPositioningWorkshop() {
                 heading: 'Sections',
                 items: [
                   { href: '#overview', label: 'Overview', number: '0' },
-                  { href: '#before-you-start', label: 'Get Your Messaging Ready', number: '1-6' },
-                  { href: '#live-guide', label: 'Opening and Client Journey', number: '7-21' },
+                  { href: '#live-guide', label: 'Opening and Client Journey', number: '1-21' },
                   { href: '#step-positioning-foundation', label: 'Market Positioning and Close', number: '22-39' },
                   { href: '#positioning-builder', label: 'Workbook', number: '40-46' },
                 ],
@@ -269,11 +268,6 @@ export default function TianaAiPositioningWorkshop() {
 
           <div className="space-y-4">
             {[
-              {
-                badge: 'Before You Start',
-                title: 'Get Your Messaging Ready',
-                description: 'Gather your current messaging and run the AI Description Test as a baseline. Takes ten minutes. Makes the opening exercise significantly more useful.',
-              },
               {
                 badge: 'Live Guide',
                 title: 'The AI Era and Where You Stand: Session Guide',
@@ -407,46 +401,34 @@ Part 3 - System           AI Brand Brain: Claude works from your clarity`}
           </div>
         </Section>
 
-        <Section id="before-you-start" number="2" label="Before You Start" title="Get Your Messaging Ready">
+        <Section id="live-guide" number="2" label="Part 1" title="The AI Era and Where You Stand">
           <div className="space-y-4">
             <p className="text-[#FCF4EB]/68 leading-relaxed">
-              Two short tasks before the session. They take less than ten minutes total and will make the opening exercise much more meaningful.
-            </p>
-            <p className="text-[#FCF4EB]/68 leading-relaxed">
-              No special tools needed. Just your current messaging and five minutes with Claude.
+              We are going to slow down and go deep on the two things that everything else in this series depends on:
+              who you are actually speaking to, and why they would choose you over every other option they are actually considering.
+              By the end of today, you will have a positioning statement, an awareness map of your ideal client, and a clear picture of how those two things connect to your lead generation.
             </p>
           </div>
 
-          <div id="task-gather-current-messaging">
-          <StepCard number={3} title="Gather your current messaging">
-            <p>At the start of the session, we run the AI Description Test on your existing materials. Have them ready before you arrive.</p>
-            <p>Gather one of the following:</p>
-            <BulletList items={[
-              'Your website homepage headline and subheadline',
-              'Your LinkedIn bio or About section',
-              'Your main offer description from your sales page, a proposal, or a recent social post',
-            ]} />
-            <p>You only need one. The goal is to have your current best attempt at describing what you do somewhere you can paste it quickly.</p>
-          </StepCard>
-          </div>
-
-          <PromptCard
-            title="Edit this first"
-            intro="Fill this in yourself first. This is the block you keep open during the workshop."
-            prompt={`My source:
-[WEBSITE / LINKEDIN / OFFER DESCRIPTION / OTHER]
-
-Paste the text that best describes what I do, who I serve, and what outcome I deliver:
-[PASTE HERE]
-
-Where I saved it so I can access it easily during the session:
-[WRITE HERE]`}
-          />
-
-          <PromptCard
-            title="Optional: Let Claude pull the messaging using WebFetch"
-            intro="If the source is on the internet, use this so Claude can do the fetching for you."
-            prompt={`Using WebFetch, read this live page and extract only the text that best describes what I do, who I serve, and what outcome I deliver.
+          <div className="rounded-[24px] border border-[#7C69C7]/25 bg-[#7C69C7]/[0.07] p-6">
+            <p className="text-[#7C69C7] text-xs font-semibold uppercase tracking-[0.20em] mb-3">While People Are Joining — 5 to 10 minutes</p>
+            <p className="text-[#FCF4EB]/75 leading-relaxed mb-5">
+              We start the clock while the room fills. Open your current messaging now and run the baseline test. You only need one piece — a homepage headline, a LinkedIn bio, or an offer description. The goal is a clear before picture.
+            </p>
+            <div className="space-y-4">
+              <StepCard number={1} title="Gather your current messaging">
+                <p>Pull up one of the following:</p>
+                <BulletList items={[
+                  'Your website homepage headline and subheadline',
+                  'Your LinkedIn bio or About section',
+                  'Your main offer description from your sales page, a proposal, or a recent social post',
+                ]} />
+                <p>You only need one. Have it somewhere you can paste it quickly.</p>
+              </StepCard>
+              <PromptCard
+                title="Optional: Let Claude pull the messaging using WebFetch"
+                intro="If the source is on the internet, use this so Claude can do the fetching for you."
+                prompt={`Using WebFetch, read this live page and extract only the text that best describes what I do, who I serve, and what outcome I deliver.
 
 URL:
 [PASTE WEBSITE OR LINKEDIN URL HERE]
@@ -457,25 +439,19 @@ Then return:
 3. One sentence on what already feels vague or generic
 
 Do not rewrite the messaging yet. I only want the clean baseline text.`}
-          />
-
-          <div id="task-run-baseline">
-          <StepCard number={4} title="Run the AI Description Test as your baseline">
-            <p>Before the session, run the test once so you have a clear before picture. You will run it again at the end of the series.</p>
-            <p>Open Claude, paste in your current messaging from Step 1, then send the exact prompt below.</p>
-          </StepCard>
-          </div>
-
-          <PromptCard
-            title="Exact baseline prompt"
-            intro="Paste your messaging first, then copy this exact prompt into Claude."
-            prompt={`Describe what I do, who I serve, and what makes me different from others in my space. Base your answer only on the text I just gave you.`}
-          />
-
-          <PromptCard
-            title="Save your baseline notes"
-            intro="After Claude responds, fill this in so you have a clear before-state to compare later."
-            prompt={`Baseline - [DATE]
+              />
+              <StepCard number={2} title="Run the baseline AI Description Test">
+                <p>Paste in your current messaging, then send the exact prompt below. Read the output. This is your before picture.</p>
+              </StepCard>
+              <PromptCard
+                title="Baseline prompt"
+                intro="Paste your messaging first, then copy this exact prompt into Claude."
+                prompt={`Describe what I do, who I serve, and what makes me different from others in my space. Base your answer only on the text I just gave you.`}
+              />
+              <PromptCard
+                title="Save your baseline notes"
+                intro="After Claude responds, fill this in so you have a clear before-state to compare later."
+                prompt={`Baseline - [DATE]
 
 What felt flat or generic:
 [WRITE HERE]
@@ -485,24 +461,11 @@ What details Claude could not see clearly:
 
 Where I saved the screenshot or copied response:
 [WRITE HERE]`}
-          />
-
-          <ProTip type="tip">
-            The output will probably feel flat or generic. That is normal and expected. You are not testing Claude. You are capturing a baseline so you can see how far your positioning has moved by the end of the series.
-          </ProTip>
-
-          <ProTip type="warning">
-            Do not adjust your messaging before the session. The baseline needs to reflect where you are right now.
-          </ProTip>
-        </Section>
-
-        <Section id="live-guide" number="5" label="Part 1" title="The AI Era and Where You Stand">
-          <div className="space-y-4">
-            <p className="text-[#FCF4EB]/68 leading-relaxed">
-              We are going to slow down and go deep on the two things that everything else in this series depends on:
-              who you are actually speaking to, and why they would choose you over every other option they are actually considering.
-              By the end of today, you will have a positioning statement, an awareness map of your ideal client, and a clear picture of how those two things connect to your lead generation.
-            </p>
+              />
+              <ProTip type="tip">
+                The output will probably feel flat or generic. That is normal and expected. You are not testing Claude. You are capturing a baseline so you can see how far your positioning has moved by the end of the series.
+              </ProTip>
+            </div>
           </div>
 
           <PromptCard
@@ -522,7 +485,7 @@ Rules:
             <blockquote className="border-l-2 border-[#7C69C7]/50 pl-4 italic text-[#FCF4EB]/75">
               Raise your hand if you have ever asked AI to write marketing copy and the result sounded technically correct but somehow completely generic.
             </blockquote>
-            <p>Then immediately: open Claude and paste in the messaging you gathered during prep.</p>
+            <p>Open Claude and paste in the messaging from the opening exercise above.</p>
             <p>Send the prompt below. Read the output.</p>
             <p className="text-[#FCF4EB] font-semibold">The gap between that and how you would describe yourself is what this series is about.</p>
           </TeachingCard>

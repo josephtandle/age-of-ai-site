@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     template: '%s | How to Stand Out in the Age of AI',
   },
   description:
-    "Tiyana Gori's messaging and positioning workshop with editable copy-and-paste prompts throughout.",
+    "Tiyana Ti's messaging and positioning workshop with editable copy-and-paste prompts throughout.",
   alternates: {
     canonical: BASE,
   },
@@ -26,14 +26,14 @@ export const metadata: Metadata = {
     url: BASE,
     title: 'How to Stand Out in the Age of AI',
     description:
-      "Tiyana Gori's messaging and positioning workshop with editable copy-and-paste prompts throughout.",
+      "Tiyana Ti's messaging and positioning workshop with editable copy-and-paste prompts throughout.",
     siteName: 'How to Stand Out in the Age of AI',
   },
   twitter: {
     card: 'summary_large_image',
     title: 'How to Stand Out in the Age of AI',
     description:
-      "Tiyana Gori's messaging and positioning workshop with editable copy-and-paste prompts throughout.",
+      "Tiyana Ti's messaging and positioning workshop with editable copy-and-paste prompts throughout.",
   },
   robots: {
     index: true,
