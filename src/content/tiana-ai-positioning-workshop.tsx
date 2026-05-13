@@ -257,6 +257,22 @@ export default function TianaAiPositioningWorkshop() {
       </div>
 
       <div className="space-y-8">
+        <div className="rounded-[30px] border border-white/[0.08] bg-[linear-gradient(180deg,rgba(255,255,255,0.045),rgba(255,255,255,0.028))] p-8 md:p-10 shadow-[inset_0_1px_0_rgba(255,255,255,0.04)]">
+          <p className="text-[#7C69C7] text-xs font-semibold uppercase tracking-[0.22em] mb-3">Bonus Session Recording</p>
+          <h2 className="text-2xl font-bold text-[#FCF4EB] mb-2">Watch the May 13 Bonus Session</h2>
+          <p className="text-[#FCF4EB]/60 text-sm mb-6 leading-relaxed">Full live recording from the Age of AI bonus workshop for both cohorts, hosted on the Cohort 1 Zoom room.</p>
+          <div style={{ position: 'relative', width: '100%', paddingTop: '56.25%', overflow: 'hidden', borderRadius: '12px' }}>
+            <iframe
+              style={{ position: 'absolute', inset: 0, width: '100%', height: '100%' }}
+              src="https://www.youtube.com/embed/TfLytZNk3ls"
+              title="AI Positioning Workshop"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerPolicy="strict-origin-when-cross-origin"
+              allowFullScreen
+            />
+          </div>
+        </div>
+
         <Section id="overview" number="1" label="Workshop Overview" title="The AI Era and Where You Stand">
           <div className="space-y-4">
             <p className="text-[#FCF4EB]/68 leading-relaxed">
