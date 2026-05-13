@@ -1,0 +1,298 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ─── CSS Custom Properties ──────────────────────────── */
+@property --gradient-angle {
+  syntax: '<angle>';
+  initial-value: 0deg;
+  inherits: false;
+}
+
+:root {
+  --purple: #7C69C7;
+  --pink: #F5C3C6;
+  --dark: #151515;
+  --cream: #FCF4EB;
+}
+
+/* ─── Base ────────────────────────────────────────────── */
+* { box-sizing: border-box; }
+
+::selection {
+  background: rgba(124, 105, 199, 0.4);
+  color: #FCF4EB;
+}
+
+html { scroll-behavior: smooth; }
+
+@keyframes dot-drift {
+  0%   { background-position: 0 0; }
+  100% { background-position: 28px 28px; }
+}
+
+body {
+  background-color: #151515;
+  color: #FCF4EB;
+  /* Subtle dot-grid pattern across every page */
+  background-image: radial-gradient(rgba(124, 105, 199, 0.08) 1px, transparent 1px);
+  background-size: 28px 28px;
+  animation: dot-drift 12s linear infinite;
+}
+
+/* ─── Scrollbar ───────────────────────────────────────── */
+::-webkit-scrollbar { width: 5px; }
+::-webkit-scrollbar-track { background: #1a1a1a; }
+::-webkit-scrollbar-thumb {
+  background: rgba(124, 105, 199, 0.4);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover { background: rgba(124, 105, 199, 0.65); }
+
+/* ─── Gradient Text ───────────────────────────────────── */
+.gradient-text {
+  background: linear-gradient(135deg, #FCF4EB 0%, #9D8FE0 35%, #F5C3C6 70%, #FCF4EB 100%);
+  background-size: 300% 300%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: gradient-shift 7s ease infinite;
+  padding-bottom: 0.15em;
+  margin-bottom: -0.15em;
+}
+
+.card-glow-border {
+  position: relative;
+  border-radius: 1rem;
+}
+
+/* ─── Card Hover ──────────────────────────────────────── */
+.card-hover {
+  transition: transform 0.22s ease, box-shadow 0.22s ease, border-color 0.22s ease, background 0.22s ease;
+}
+.card-hover:hover {
+  transform: translateY(-3px);
+  box-shadow:
+    0 16px 48px rgba(124, 105, 199, 0.18),
+    0 4px 16px rgba(0,0,0,0.35),
+    inset 0 1px 0 rgba(255,255,255,0.05);
+}
+
+/* ─── Shimmer Sweep ───────────────────────────────────── */
+.card-shimmer {
+  position: relative;
+  overflow: hidden;
+}
+.card-shimmer::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 55%;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(157, 143, 224, 0.8), transparent);
+  transition: left 0.55s ease;
+}
+.card-shimmer:hover::after { left: 150%; }
+
+/* ─── Copy Button Glass + Magnetic Host ───────────────── */
+.copy-button-glass {
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+  border-radius: 0.55rem;
+}
+.copy-button-glass::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  opacity: 0.55;
+  background:
+    radial-gradient(circle at 24% 0%, rgba(255,255,255,0.22), transparent 34%),
+    linear-gradient(180deg, rgba(255,255,255,0.12), rgba(255,255,255,0.02));
+  transition: opacity 0.18s ease;
+}
+.copy-button-glass:hover::before { opacity: 0.82; }
+.copy-button-primary {
+  background:
+    linear-gradient(135deg, rgba(124,105,199,0.86), rgba(94,78,166,0.72)),
+    rgba(124,105,199,0.42);
+  border: 1px solid rgba(207,197,255,0.24);
+  box-shadow:
+    inset 0 1px 0 rgba(255,255,255,0.20),
+    0 8px 18px rgba(0,0,0,0.18);
+  color: #FCF4EB;
+  backdrop-filter: blur(10px);
+}
+.copy-button-primary:hover {
+  border-color: rgba(207,197,255,0.40);
+  box-shadow:
+    inset 0 1px 0 rgba(255,255,255,0.28),
+    0 10px 22px rgba(124,105,199,0.20);
+}
+.copy-button-secondary {
+  background: rgba(252,244,235,0.055);
+  border: 1px solid rgba(252,244,235,0.14);
+  color: rgba(252,244,235,0.58);
+  backdrop-filter: blur(8px);
+}
+.copy-button-secondary:hover {
+  background: rgba(252,244,235,0.09);
+  color: rgba(252,244,235,0.78);
+}
+
+/* ─── Number Badge Glow ───────────────────────────────── */
+.number-glow {
+  transition: box-shadow 0.25s ease, background 0.25s ease, transform 0.25s ease;
+}
+.group:hover .number-glow,
+.number-glow:hover {
+  box-shadow: 0 0 0 4px rgba(124, 105, 199, 0.15), 0 0 20px rgba(124, 105, 199, 0.45);
+  background: rgba(124, 105, 199, 0.32) !important;
+  transform: scale(1.30);
+}
+
+/* ─── ProTip ──────────────────────────────────────────── */
+.protip-hover {
+  transition: box-shadow 0.25s ease, transform 0.25s ease;
+}
+.protip-hover:hover {
+  box-shadow: 0 6px 28px rgba(124, 105, 199, 0.13);
+  transform: translateX(2px);
+}
+
+/* ─── Glowing Dividers ────────────────────────────────── */
+.glow-divider {
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(124, 105, 199, 0.4), rgba(245, 195, 198, 0.3), transparent);
+  border: none;
+}
+
+/* ─── Scroll Reveal (fallback) ────────────────────────── */
+.reveal {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.55s ease, transform 0.55s ease;
+}
+.reveal.visible { opacity: 1; transform: translateY(0); }
+.reveal-delay-1 { transition-delay: 0.08s; }
+.reveal-delay-2 { transition-delay: 0.16s; }
+.reveal-delay-3 { transition-delay: 0.24s; }
+.reveal-delay-4 { transition-delay: 0.32s; }
+.reveal-delay-5 { transition-delay: 0.40s; }
+
+/* ─── Header glow line ────────────────────────────────── */
+.header-glow::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 10%;
+  right: 10%;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(124, 105, 199, 0.4), rgba(245, 195, 198, 0.3), transparent);
+}
+
+/* ─── Footer glow line ────────────────────────────────── */
+.footer-glow {
+  border-top: none;
+  position: relative;
+}
+.footer-glow::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 5%;
+  right: 5%;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(124, 105, 199, 0.35), rgba(245, 195, 198, 0.25), transparent);
+}
+
+/* ─── Icon hover glow ─────────────────────────────────── */
+.icon-hover {
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+}
+.icon-hover:hover {
+  transform: translateY(-2px) scale(1.08);
+  box-shadow: 0 6px 20px rgba(124, 105, 199, 0.3);
+  background: rgba(124, 105, 199, 0.18) !important;
+}
+
+/* ─── Details / Summary ───────────────────────────────── */
+details > summary { list-style: none; }
+details > summary::-webkit-details-marker { display: none; }
+details > summary svg { transition: transform 0.2s ease; }
+details[open] > summary svg { transform: rotate(180deg); }
+
+/* ─── Aurora background glow (homepage hero boost) ────── */
+.aurora-orb {
+  filter: blur(60px);
+  will-change: transform;
+}
+
+/* ─── Session 8 WebFetch Feature Cards ────────────────── */
+.webfetch-hero-glass {
+  position: relative;
+  overflow: hidden;
+  border: 1px solid rgba(252,244,235,0.13);
+  background:
+    radial-gradient(circle at 12% 0%, rgba(157,143,224,0.24), transparent 34%),
+    radial-gradient(circle at 88% 18%, rgba(255,220,230,0.16), transparent 30%),
+    linear-gradient(145deg, rgba(255,255,255,0.085), rgba(255,255,255,0.026));
+  box-shadow:
+    0 22px 70px rgba(0,0,0,0.30),
+    inset 0 1px 0 rgba(255,255,255,0.10);
+  backdrop-filter: blur(14px);
+}
+.webfetch-hero-glass::before {
+  content: '';
+  position: absolute;
+  inset: 1px;
+  border-radius: inherit;
+  pointer-events: none;
+  background-image: radial-gradient(rgba(252,244,235,0.18) 1px, transparent 1px);
+  background-size: 18px 18px;
+  mask-image: linear-gradient(135deg, rgba(0,0,0,0.50), transparent 58%);
+  opacity: 0.32;
+}
+.webfetch-hero-glass::after {
+  content: '';
+  position: absolute;
+  left: -15%;
+  right: -15%;
+  top: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(157,143,224,0.75), rgba(245,195,198,0.38), transparent);
+}
+.webfetch-feature-card {
+  position: relative;
+  overflow: hidden;
+  border: 1px solid rgba(252,244,235,0.11);
+  background:
+    linear-gradient(145deg, rgba(255,255,255,0.078), rgba(255,255,255,0.024)),
+    rgba(21,21,21,0.46);
+  box-shadow:
+    0 18px 44px rgba(0,0,0,0.22),
+    inset 0 1px 0 rgba(255,255,255,0.07);
+  backdrop-filter: blur(12px);
+  transition: transform 0.24s ease, border-color 0.24s ease, box-shadow 0.24s ease, background 0.24s ease;
+}
+.webfetch-feature-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  background:
+    radial-gradient(circle at 20% 0%, rgba(124,105,199,0.22), transparent 36%),
+    radial-gradient(circle at 94% 12%, rgba(245,195,198,0.16), transparent 30%);
+  transition: opacity 0.24s ease;
+}
+.webfetch-feature-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(157,143,224,0.34);
+  box-shadow:
+    0 24px 58px rgba(0,0,0,0.28),
+    0 10px 34px rgba(124,105,199,0.16),
+    inset 0 1px 0 rgba(255,255,255,0.10);
+}
+.webfetch-feature-card:hover::before { opacity: 1; }
