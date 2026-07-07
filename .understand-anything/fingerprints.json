@@ -1,0 +1,457 @@
+{
+  "version": "1.0.0",
+  "gitCommitHash": "39571f43caeb6ab986faa04c22d9577c1b2ed676",
+  "generatedAt": "2026-06-27T20:13:25.649Z",
+  "files": {
+    "HOW-TO-EDIT.md": {
+      "filePath": "HOW-TO-EDIT.md",
+      "contentHash": "653faf18927468bb85a41f8158d3947b714695a94f8aa9d968fd8db5951499dd",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 55,
+      "hasStructuralAnalysis": true
+    },
+    "next-env.d.ts": {
+      "filePath": "next-env.d.ts",
+      "contentHash": "7b550dda9686c16f36a17bf9051d5dbf31e98555b30d114ac49fc49a1e712651",
+      "functions": [],
+      "classes": [],
+      "imports": [
+        {
+          "source": "./.next/types/routes.d.ts",
+          "specifiers": []
+        }
+      ],
+      "exports": [],
+      "totalLines": 7,
+      "hasStructuralAnalysis": true
+    },
+    "next.config.ts": {
+      "filePath": "next.config.ts",
+      "contentHash": "9c1a231df4faec935106e3170a533e5e54d4b34a40a394c80e43cc43ee1bf22c",
+      "functions": [],
+      "classes": [],
+      "imports": [
+        {
+          "source": "next",
+          "specifiers": [
+            "NextConfig"
+          ]
+        },
+        {
+          "source": "path",
+          "specifiers": [
+            "path"
+          ]
+        }
+      ],
+      "exports": [],
+      "totalLines": 11,
+      "hasStructuralAnalysis": true
+    },
+    "package.json": {
+      "filePath": "package.json",
+      "contentHash": "3fa836a521c5896bf4b866e245aab7e36b3e5314a3c460915ca4b59cf4550147",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 30,
+      "hasStructuralAnalysis": true
+    },
+    "postcss.config.mjs": {
+      "filePath": "postcss.config.mjs",
+      "contentHash": "311c318dbb665205803cbfba7e69101972204feadc763b58bcdf7f74b374b5a0",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 9,
+      "hasStructuralAnalysis": true
+    },
+    "README.md": {
+      "filePath": "README.md",
+      "contentHash": "25b0ed1e97654d9cff24090479090137b70b96facb7d7924296f8809312528ca",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 27,
+      "hasStructuralAnalysis": true
+    },
+    "src/app/globals.css": {
+      "filePath": "src/app/globals.css",
+      "contentHash": "0bbde8cd0bd75543fb04082b5093d533919fef319510449e07f32c7fbf0119fb",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 299,
+      "hasStructuralAnalysis": false
+    },
+    "src/app/layout.tsx": {
+      "filePath": "src/app/layout.tsx",
+      "contentHash": "69e83787ff227fb88c26ec21d13f2302909ba2f9b84cb0be09d0ccd2996ad22f",
+      "functions": [
+        {
+          "name": "RootLayout",
+          "params": [
+            "{\n  children,\n}"
+          ],
+          "exported": true,
+          "lineCount": 27
+        }
+      ],
+      "classes": [],
+      "imports": [
+        {
+          "source": "next",
+          "specifiers": [
+            "Metadata"
+          ]
+        },
+        {
+          "source": "next/font/google",
+          "specifiers": [
+            "Plus_Jakarta_Sans"
+          ]
+        },
+        {
+          "source": "./globals.css",
+          "specifiers": []
+        }
+      ],
+      "exports": [
+        "metadata",
+        "RootLayout"
+      ],
+      "totalLines": 71,
+      "hasStructuralAnalysis": true
+    },
+    "src/app/page.tsx": {
+      "filePath": "src/app/page.tsx",
+      "contentHash": "4631e3129683258bad05ec55ee1e9ad0416ae2fb2639e2ae972c84e5f27bfdc3",
+      "functions": [
+        {
+          "name": "HomePage",
+          "params": [],
+          "exported": true,
+          "lineCount": 10
+        }
+      ],
+      "classes": [],
+      "imports": [
+        {
+          "source": "@/components/TianaSessionFooter",
+          "specifiers": [
+            "TianaSessionFooter"
+          ]
+        },
+        {
+          "source": "@/content/tiana-ai-positioning-workshop",
+          "specifiers": [
+            "TianaAiPositioningWorkshop"
+          ]
+        }
+      ],
+      "exports": [
+        "HomePage"
+      ],
+      "totalLines": 14,
+      "hasStructuralAnalysis": true
+    },
+    "src/components/CodeBlock.tsx": {
+      "filePath": "src/components/CodeBlock.tsx",
+      "contentHash": "4a99c256a67e25c43b981ff6550f4ce2055dc09497b2e67d9dcd9eacd2f5ce43",
+      "functions": [
+        {
+          "name": "toCodexPrompt",
+          "params": [
+            "prompt"
+          ],
+          "exported": false,
+          "lineCount": 9
+        },
+        {
+          "name": "MagneticCopyButton",
+          "params": [
+            "{ children, className = '', variant, ...props }"
+          ],
+          "exported": false,
+          "lineCount": 34
+        },
+        {
+          "name": "CodeBlock",
+          "params": [
+            "{ code, language, filename, editable, codexPrompt }"
+          ],
+          "exported": true,
+          "lineCount": 93
+        }
+      ],
+      "classes": [],
+      "imports": [
+        {
+          "source": "react",
+          "specifiers": [
+            "useState"
+          ]
+        },
+        {
+          "source": "react",
+          "specifiers": [
+            "ButtonHTMLAttributes",
+            "MouseEvent",
+            "ReactNode"
+          ]
+        },
+        {
+          "source": "@/lib/copyWithConfetti",
+          "specifiers": [
+            "copyWithConfetti"
+          ]
+        }
+      ],
+      "exports": [
+        "CodeBlock"
+      ],
+      "totalLines": 158,
+      "hasStructuralAnalysis": true
+    },
+    "src/components/ProTip.tsx": {
+      "filePath": "src/components/ProTip.tsx",
+      "contentHash": "f5e76be345a40af33f8f6f8ace6eaf926482418f6090164ab38e4d0d12b02a81",
+      "functions": [
+        {
+          "name": "ProTip",
+          "params": [
+            "{ type = 'tip', title, className, children }"
+          ],
+          "exported": true,
+          "lineCount": 17
+        }
+      ],
+      "classes": [],
+      "imports": [
+        {
+          "source": "react",
+          "specifiers": [
+            "React"
+          ]
+        }
+      ],
+      "exports": [
+        "ProTip"
+      ],
+      "totalLines": 50,
+      "hasStructuralAnalysis": true
+    },
+    "src/components/StepCard.tsx": {
+      "filePath": "src/components/StepCard.tsx",
+      "contentHash": "e9ef4952c6c880ddd947393443db1d3d5eea0eff0387fe0cde547c71689bab44",
+      "functions": [
+        {
+          "name": "StepCard",
+          "params": [
+            "{ number, title, children }"
+          ],
+          "exported": true,
+          "lineCount": 22
+        }
+      ],
+      "classes": [],
+      "imports": [
+        {
+          "source": "react",
+          "specifiers": [
+            "React"
+          ]
+        }
+      ],
+      "exports": [
+        "StepCard"
+      ],
+      "totalLines": 31,
+      "hasStructuralAnalysis": true
+    },
+    "src/components/TianaSessionFooter.tsx": {
+      "filePath": "src/components/TianaSessionFooter.tsx",
+      "contentHash": "b610fe1466f96837d9092f495f05bd9f0ffc2014803f288c8a22972d188611bc",
+      "functions": [
+        {
+          "name": "TianaSessionFooter",
+          "params": [],
+          "exported": true,
+          "lineCount": 27
+        }
+      ],
+      "classes": [],
+      "imports": [],
+      "exports": [
+        "TianaSessionFooter"
+      ],
+      "totalLines": 28,
+      "hasStructuralAnalysis": true
+    },
+    "src/content/tiana-ai-positioning-workshop.tsx": {
+      "filePath": "src/content/tiana-ai-positioning-workshop.tsx",
+      "contentHash": "eb040804be0bb71c718ddb88e9f8f05ec2cca60c8ed23e3769ddceb9ff2a4d0b",
+      "functions": [
+        {
+          "name": "Section",
+          "params": [
+            "{\n  id,\n  number,\n  label,\n  title,\n  children,\n}"
+          ],
+          "exported": false,
+          "lineCount": 33
+        },
+        {
+          "name": "PromptCard",
+          "params": [
+            "{\n  id,\n  number,\n  title,\n  intro,\n  filename = 'Claude Code prompt',\n  prompt,\n}"
+          ],
+          "exported": false,
+          "lineCount": 35
+        },
+        {
+          "name": "TeachingCard",
+          "params": [
+            "{\n  id,\n  step,\n  eyebrow,\n  title,\n  children,\n}"
+          ],
+          "exported": false,
+          "lineCount": 31
+        },
+        {
+          "name": "FrameworkBlock",
+          "params": [
+            "{ lines }"
+          ],
+          "exported": false,
+          "lineCount": 13
+        },
+        {
+          "name": "StructureCard",
+          "params": [
+            "{\n  number,\n  title,\n  time,\n  items,\n}"
+          ],
+          "exported": false,
+          "lineCount": 38
+        },
+        {
+          "name": "BulletList",
+          "params": [
+            "{ items }"
+          ],
+          "exported": false,
+          "lineCount": 12
+        },
+        {
+          "name": "WorkshopRecordingCard",
+          "params": [
+            "{\n  title,\n  subtitle,\n  videoId,\n}"
+          ],
+          "exported": false,
+          "lineCount": 34
+        },
+        {
+          "name": "TianaAiPositioningWorkshop",
+          "params": [],
+          "exported": true,
+          "lineCount": 1100
+        }
+      ],
+      "classes": [],
+      "imports": [
+        {
+          "source": "@/components/CodeBlock",
+          "specifiers": [
+            "CodeBlock"
+          ]
+        },
+        {
+          "source": "@/components/ProTip",
+          "specifiers": [
+            "ProTip"
+          ]
+        },
+        {
+          "source": "@/components/StepCard",
+          "specifiers": [
+            "StepCard"
+          ]
+        }
+      ],
+      "exports": [
+        "TianaAiPositioningWorkshop"
+      ],
+      "totalLines": 1317,
+      "hasStructuralAnalysis": true
+    },
+    "src/lib/copyWithConfetti.ts": {
+      "filePath": "src/lib/copyWithConfetti.ts",
+      "contentHash": "99888d632c51111c6e422b457c7faf6d778339b37d81a41f54eadb883d07d9f8",
+      "functions": [
+        {
+          "name": "getOrigin",
+          "params": [
+            "event"
+          ],
+          "exported": false,
+          "lineCount": 8
+        },
+        {
+          "name": "copyWithConfetti",
+          "params": [
+            "text",
+            "event"
+          ],
+          "exported": true,
+          "lineCount": 11
+        }
+      ],
+      "classes": [],
+      "imports": [
+        {
+          "source": "canvas-confetti",
+          "specifiers": [
+            "confetti"
+          ]
+        }
+      ],
+      "exports": [
+        "copyWithConfetti"
+      ],
+      "totalLines": 33,
+      "hasStructuralAnalysis": true
+    },
+    "tailwind.config.ts": {
+      "filePath": "tailwind.config.ts",
+      "contentHash": "0598fa0fae9291b2b0b4183d9dd5344f055a88aa8c9f58e69ade471ad42fbda5",
+      "functions": [],
+      "classes": [],
+      "imports": [
+        {
+          "source": "tailwindcss",
+          "specifiers": [
+            "Config"
+          ]
+        }
+      ],
+      "exports": [],
+      "totalLines": 56,
+      "hasStructuralAnalysis": true
+    },
+    "tsconfig.json": {
+      "filePath": "tsconfig.json",
+      "contentHash": "55134881a23efd2a1f9266d2d0752731ff9c40d0e867136cd8863ea679560a09",
+      "functions": [],
+      "classes": [],
+      "imports": [],
+      "exports": [],
+      "totalLines": 42,
+      "hasStructuralAnalysis": true
+    }
+  }
+}

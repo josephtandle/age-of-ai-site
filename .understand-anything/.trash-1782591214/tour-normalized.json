@@ -1,0 +1,100 @@
+[
+  {
+    "order": 1,
+    "title": "Project Overview",
+    "description": "Start with the README to understand what this repository is: a standalone Next.js site that hosts Tiyana Gori's 'How to Stand Out in the Age of AI' workshop page. It explains how to run the site locally, points you at the three files that matter most (the home route, the workshop content, and the interactive code block), and describes how the site is deployed. Treat it as the map for the rest of this tour.",
+    "nodeIds": [
+      "document:README.md"
+    ]
+  },
+  {
+    "order": 2,
+    "title": "Root Layout and Global Styles",
+    "description": "Every page in a Next.js App Router project is wrapped by the root layout, which sets page metadata and loads the site-wide stylesheet. The layout pulls in globals.css, where the design tokens, base element styles, and custom utility classes that give the workshop page its look are defined. Understanding this shell first explains where fonts, colors, and spacing come from before we reach any page content.",
+    "nodeIds": [
+      "file:src/app/layout.tsx",
+      "file:src/app/globals.css"
+    ],
+    "languageLesson": "In the Next.js App Router, app/layout.tsx is a special file that wraps all routes. It must render <html> and <body>, and any CSS it imports becomes global to the whole site."
+  },
+  {
+    "order": 3,
+    "title": "Home Page Route",
+    "description": "page.tsx is the application's entry point and the only route in this single-page site. Sitting inside the layout from Step 2, it simply renders the long-form workshop content and then the session footer beneath it. This is the smallest possible composition, which keeps all the real substance in the dedicated content file we look at next.",
+    "nodeIds": [
+      "file:src/app/page.tsx"
+    ],
+    "languageLesson": "An app/page.tsx is the route's UI. By default it is a React Server Component, so it can render without shipping JavaScript unless a child opts into the client with 'use client'."
+  },
+  {
+    "order": 4,
+    "title": "The Workshop Content Page",
+    "description": "This is the heart of the project: a long-form page that composes many small presentational components into the full guided workshop experience for Tiyana's session. It is the file with the highest fan-in and fan-out in the codebase, importing the StepCard, ProTip, and CodeBlock building blocks we explore next. Because all of the actual copy lives here, it is the file an editor changes most often.",
+    "nodeIds": [
+      "file:src/content/tiana-ai-positioning-workshop.tsx"
+    ]
+  },
+  {
+    "order": 5,
+    "title": "Layout Building Blocks",
+    "description": "The workshop page is assembled from two reusable presentational components. StepCard renders a numbered step with a title and body for walkthrough-style sections, while ProTip renders a styled tip, note, or warning callout with an icon and optional title. Together they give the long content page a consistent, scannable rhythm without repeating markup.",
+    "nodeIds": [
+      "file:src/components/StepCard.tsx",
+      "file:src/components/ProTip.tsx"
+    ],
+    "languageLesson": "These components use React's children prop to wrap arbitrary content, a composition pattern that lets one styled shell hold any body the workshop author drops inside it."
+  },
+  {
+    "order": 6,
+    "title": "The Interactive Code Block",
+    "description": "CodeBlock is the most interactive component on the page: it shows editable code, a magnetic copy button, and a special variant that converts content into a Codex prompt and copies it with a confetti burst. It is the showpiece that makes the workshop hands-on rather than static. This is also where the page crosses from server-rendered content into client-side interactivity.",
+    "nodeIds": [
+      "file:src/components/CodeBlock.tsx"
+    ],
+    "languageLesson": "Interactive components like this declare 'use client' at the top of the file, which tells Next.js to ship and hydrate them in the browser so event handlers and state work."
+  },
+  {
+    "order": 7,
+    "title": "Clipboard and Confetti Utility",
+    "description": "The celebratory copy effect from Step 6 is powered by this small shared helper. copyWithConfetti writes text to the clipboard and then fires a confetti burst that originates from the exact point the user clicked. Pulling this logic into the Utility Layer keeps CodeBlock focused on presentation while the side-effecting browser work lives in one reusable place.",
+    "nodeIds": [
+      "file:src/lib/copyWithConfetti.ts"
+    ],
+    "languageLesson": "This is a browser-only utility: it relies on the async navigator.clipboard API and pointer coordinates, so it can only run client-side, not during server rendering."
+  },
+  {
+    "order": 8,
+    "title": "Session Footer",
+    "description": "Back at the top level, the home page renders this footer directly beneath the workshop content. TianaSessionFooter is a purely presentational closing block shown at the bottom of the session page. It completes the page composition first introduced in Step 3.",
+    "nodeIds": [
+      "file:src/components/TianaSessionFooter.tsx"
+    ]
+  },
+  {
+    "order": 9,
+    "title": "Styling Pipeline",
+    "description": "The visual system runs on Tailwind CSS. tailwind.config.ts declares which files Tailwind scans for class names and extends the theme with this site's custom design tokens, while postcss.config.mjs wires Tailwind into the build so those utility classes are generated. Together they back the styling used in globals.css from Step 2 and every component since.",
+    "nodeIds": [
+      "file:tailwind.config.ts",
+      "file:postcss.config.mjs"
+    ],
+    "languageLesson": "Tailwind is a utility-first CSS framework processed at build time by PostCSS. The config's content paths must include every file that uses Tailwind classes, or those classes get purged from the final stylesheet."
+  },
+  {
+    "order": 10,
+    "title": "Project and Compiler Configuration",
+    "description": "These two files define how the project builds and type-checks. package.json declares the Next.js dependencies and the dev, build, and start scripts referenced in the README, and tsconfig.json configures the TypeScript compiler that has the highest fan-out in the graph because it governs every source file. They are the operational backbone that makes the code in the previous steps runnable.",
+    "nodeIds": [
+      "config:package.json",
+      "config:tsconfig.json"
+    ]
+  },
+  {
+    "order": 11,
+    "title": "Editing Guide for Non-Developers",
+    "description": "The tour closes with HOW-TO-EDIT.md, a plain-language guide written so Tiyana can update the site herself without prior coding experience. It walks through cloning, installing, running locally, editing the workshop content file from Step 4 and the CodeBlock examples from Step 6, previewing, and pushing changes. Reading it last ties the architecture you just learned to the day-to-day workflow of actually maintaining the page.",
+    "nodeIds": [
+      "document:HOW-TO-EDIT.md"
+    ]
+  }
+]

@@ -1,0 +1,47 @@
+[
+  {
+    "id": "layer:ui",
+    "name": "UI Layer",
+    "description": "Next.js App Router entry points, the long-form workshop page composition, and all presentational React components plus global styles that render Tiyana's workshop experience.",
+    "nodeIds": [
+      "file:src/app/layout.tsx",
+      "file:src/app/page.tsx",
+      "file:src/app/globals.css",
+      "file:src/content/tiana-ai-positioning-workshop.tsx",
+      "file:src/components/ProTip.tsx",
+      "file:src/components/StepCard.tsx",
+      "file:src/components/CodeBlock.tsx",
+      "file:src/components/TianaSessionFooter.tsx"
+    ]
+  },
+  {
+    "id": "layer:utility",
+    "name": "Utility Layer",
+    "description": "Shared client-side helper that copies text to the clipboard and triggers the confetti burst used by the interactive code block.",
+    "nodeIds": [
+      "file:src/lib/copyWithConfetti.ts"
+    ]
+  },
+  {
+    "id": "layer:config",
+    "name": "Configuration Layer",
+    "description": "Next.js, TypeScript, Tailwind, and PostCSS build configuration plus the generated Next.js type declaration that define how the site compiles and is styled.",
+    "nodeIds": [
+      "config:package.json",
+      "config:tsconfig.json",
+      "file:next.config.ts",
+      "file:postcss.config.mjs",
+      "file:next-env.d.ts",
+      "file:tailwind.config.ts"
+    ]
+  },
+  {
+    "id": "layer:documentation",
+    "name": "Documentation Layer",
+    "description": "Project README and the non-technical step-by-step editing guide that help Tiyana run and update the workshop page.",
+    "nodeIds": [
+      "document:README.md",
+      "document:HOW-TO-EDIT.md"
+    ]
+  }
+]

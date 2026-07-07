@@ -1,0 +1,14 @@
+{
+  "fixedSectionOk": true,
+  "nodesRecovered": 0,
+  "edgesRestored": 0,
+  "crossBatchEdgesAdded": 0,
+  "typesRemapped": 0,
+  "complexityRemapped": 0,
+  "notes": [
+    "Merge report was clean: 33 nodes / 41 edges in and out, no nodes or edges dropped, no 'could not fix' issues.",
+    "All 7 non-empty relationships in the import map already have matching 'imports' edges in the assembled graph, so the script's '0 recovered' result is correct and no cross-batch edges were missing.",
+    "All 33 node IDs use valid prefixes (file:/function:/document:/config:) and all complexity values are valid (simple/moderate/complex); no unknown types encountered.",
+    "Graph is internally consistent: every edge source/target resolves to an existing node; contains/exports/calls relationships for the function nodes look correct."
+  ]
+}

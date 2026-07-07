@@ -1,0 +1,23 @@
+{
+  "projectRoot": "/Users/myos/.myos/workspace/projects/mastermind/age-of-ai-site",
+  "sourceFilePaths": [
+    "HOW-TO-EDIT.md",
+    "next-env.d.ts",
+    "next.config.ts",
+    "package.json",
+    "postcss.config.mjs",
+    "README.md",
+    "src/app/globals.css",
+    "src/app/layout.tsx",
+    "src/app/page.tsx",
+    "src/components/CodeBlock.tsx",
+    "src/components/ProTip.tsx",
+    "src/components/StepCard.tsx",
+    "src/components/TianaSessionFooter.tsx",
+    "src/content/tiana-ai-positioning-workshop.tsx",
+    "src/lib/copyWithConfetti.ts",
+    "tailwind.config.ts",
+    "tsconfig.json"
+  ],
+  "gitCommitHash": "39571f43caeb6ab986faa04c22d9577c1b2ed676"
+}

@@ -1,0 +1,182 @@
+{
+  "schemaVersion": 1,
+  "algorithm": "louvain",
+  "totalFiles": 18,
+  "totalBatches": 2,
+  "exportsByPath": {
+    ".understand-anything/.understandignore": [],
+    "next-env.d.ts": [],
+    "next.config.ts": [],
+    "postcss.config.mjs": [],
+    "src/app/layout.tsx": [
+      "metadata",
+      "RootLayout"
+    ],
+    "src/app/page.tsx": [
+      "HomePage"
+    ],
+    "src/components/CodeBlock.tsx": [
+      "CodeBlock"
+    ],
+    "src/components/ProTip.tsx": [
+      "ProTip"
+    ],
+    "src/components/StepCard.tsx": [
+      "StepCard"
+    ],
+    "src/components/TianaSessionFooter.tsx": [
+      "TianaSessionFooter"
+    ],
+    "src/content/tiana-ai-positioning-workshop.tsx": [
+      "TianaAiPositioningWorkshop"
+    ],
+    "src/lib/copyWithConfetti.ts": [
+      "copyWithConfetti"
+    ],
+    "tailwind.config.ts": []
+  },
+  "batches": [
+    {
+      "batchIndex": 1,
+      "files": [
+        {
+          "path": "HOW-TO-EDIT.md",
+          "language": "markdown",
+          "sizeLines": 54,
+          "fileCategory": "docs"
+        },
+        {
+          "path": "README.md",
+          "language": "markdown",
+          "sizeLines": 26,
+          "fileCategory": "docs"
+        },
+        {
+          "path": "package.json",
+          "language": "json",
+          "sizeLines": 29,
+          "fileCategory": "config"
+        },
+        {
+          "path": "tsconfig.json",
+          "language": "json",
+          "sizeLines": 41,
+          "fileCategory": "config"
+        }
+      ],
+      "batchImportData": {
+        "HOW-TO-EDIT.md": [],
+        "README.md": [],
+        "package.json": [],
+        "tsconfig.json": []
+      },
+      "neighborMap": {}
+    },
+    {
+      "batchIndex": 2,
+      "files": [
+        {
+          "path": ".understand-anything/.understandignore",
+          "language": "unknown",
+          "sizeLines": 8,
+          "fileCategory": "code"
+        },
+        {
+          "path": "next-env.d.ts",
+          "language": "typescript",
+          "sizeLines": 6,
+          "fileCategory": "code"
+        },
+        {
+          "path": "next.config.ts",
+          "language": "typescript",
+          "sizeLines": 10,
+          "fileCategory": "code"
+        },
+        {
+          "path": "postcss.config.mjs",
+          "language": "javascript",
+          "sizeLines": 8,
+          "fileCategory": "code"
+        },
+        {
+          "path": "src/app/globals.css",
+          "language": "css",
+          "sizeLines": 298,
+          "fileCategory": "markup"
+        },
+        {
+          "path": "src/app/layout.tsx",
+          "language": "typescript",
+          "sizeLines": 70,
+          "fileCategory": "code"
+        },
+        {
+          "path": "src/app/page.tsx",
+          "language": "typescript",
+          "sizeLines": 13,
+          "fileCategory": "code"
+        },
+        {
+          "path": "src/components/CodeBlock.tsx",
+          "language": "typescript",
+          "sizeLines": 157,
+          "fileCategory": "code"
+        },
+        {
+          "path": "src/components/ProTip.tsx",
+          "language": "typescript",
+          "sizeLines": 49,
+          "fileCategory": "code"
+        },
+        {
+          "path": "src/components/StepCard.tsx",
+          "language": "typescript",
+          "sizeLines": 30,
+          "fileCategory": "code"
+        },
+        {
+          "path": "src/components/TianaSessionFooter.tsx",
+          "language": "typescript",
+          "sizeLines": 27,
+          "fileCategory": "code"
+        },
+        {
+          "path": "src/content/tiana-ai-positioning-workshop.tsx",
+          "language": "typescript",
+          "sizeLines": 1316,
+          "fileCategory": "code"
+        },
+        {
+          "path": "src/lib/copyWithConfetti.ts",
+          "language": "typescript",
+          "sizeLines": 32,
+          "fileCategory": "code"
+        },
+        {
+          "path": "tailwind.config.ts",
+          "language": "typescript",
+          "sizeLines": 55,
+          "fileCategory": "code"
+        }
+      ],
+      "batchImportData": {
+        ".understand-anything/.understandignore": [],
+        "next-env.d.ts": [],
+        "next.config.ts": [],
+        "postcss.config.mjs": [],
+        "src/app/globals.css": [],
+        "src/app/layout.tsx": [],
+        "src/app/page.tsx": [],
+        "src/components/CodeBlock.tsx": [],
+        "src/components/ProTip.tsx": [],
+        "src/components/StepCard.tsx": [],
+        "src/components/TianaSessionFooter.tsx": [],
+        "src/content/tiana-ai-positioning-workshop.tsx": [],
+        "src/lib/copyWithConfetti.ts": [],
+        "tailwind.config.ts": []
+      },
+      "neighborMap": {}
+    }
+  ]
+}

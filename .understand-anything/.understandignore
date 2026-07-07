@@ -1,0 +1,10 @@
+# .understandignore
+# Syntax: same as .gitignore
+#
+.understand-anything/
+#
+# --- From .gitignore ---
+
+# .vercel
+# .DS_Store
+
