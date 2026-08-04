@@ -12,7 +12,7 @@ export default function StepCard({ number, title, children }: StepCardProps) {
       <div className="flex items-start gap-5">
         <div
           className="number-glow flex-shrink-0 w-11 h-11 rounded-full flex items-center justify-center text-base font-bold"
-          style={{ background: 'rgba(124, 105, 199, 0.20)', color: '#7C69C7', border: '1.5px solid rgba(124, 105, 199, 0.35)' }}
+          style={{ background: 'rgba(139, 121, 212, 0.20)', color: '#8B79D4', border: '1.5px solid rgba(139, 121, 212, 0.35)' }}
         >
           {number}
         </div>

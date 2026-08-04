@@ -52,7 +52,7 @@ export default function RootLayout({
         <div className="fixed inset-0 pointer-events-none overflow-hidden">
           <div
             className="animate-float-slow absolute top-[-20%] left-[8%] h-[520px] w-[520px] rounded-full opacity-20"
-            style={{ background: 'radial-gradient(circle, #7C69C7 0%, transparent 70%)' }}
+            style={{ background: 'radial-gradient(circle, #8B79D4 0%, transparent 70%)' }}
           />
           <div
             className="animate-float-slower absolute bottom-[-15%] right-[3%] h-[420px] w-[420px] rounded-full opacity-15"
