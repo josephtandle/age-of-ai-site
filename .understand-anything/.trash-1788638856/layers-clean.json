@@ -1,0 +1,39 @@
+[
+  {
+    "id": "layer:styling",
+    "name": "Design System & Styling",
+    "description": "Global CSS and Tailwind theme configuration including color palette (dark, cream, purple, pink), typography, keyframe animations (float-slow, float-slower, gradient-shift, fade-in-up, glow-pulse, shimmer), and design tokens",
+    "nodeIds": [
+      "file:src/app/globals.css"
+    ]
+  },
+  {
+    "id": "layer:utilities",
+    "name": "Utilities & Helpers",
+    "description": "Reusable utility functions and helper modules used by components and pages",
+    "nodeIds": [
+      "file:src/lib/copyWithConfetti.ts"
+    ]
+  },
+  {
+    "id": "layer:components",
+    "name": "Reusable Components",
+    "description": "Presentational React components that are composed into pages and content sections. Includes interactive elements (CodeBlock with copy-to-clipboard), callout boxes (ProTip), step indicators (StepCard), and footer (TianaSessionFooter)",
+    "nodeIds": [
+      "file:src/components/CodeBlock.tsx",
+      "file:src/components/ProTip.tsx",
+      "file:src/components/StepCard.tsx",
+      "file:src/components/TianaSessionFooter.tsx"
+    ]
+  },
+  {
+    "id": "layer:content",
+    "name": "Pages & Content",
+    "description": "Top-level pages and content modules. Layout.tsx provides the root HTML structure with metadata and animated background decorations. Page.tsx is the home page entry point. tiana-ai-positioning-workshop.tsx contains the main workshop content with multiple sections, prompt cards, and step-by-step exercises",
+    "nodeIds": [
+      "file:src/app/layout.tsx",
+      "file:src/app/page.tsx",
+      "file:src/content/tiana-ai-positioning-workshop.tsx"
+    ]
+  }
+]

@@ -1,0 +1,62 @@
+{
+  "batchIndex": "existing",
+  "nodes": [
+    {
+      "id": "document:HOW-TO-EDIT.md",
+      "type": "document",
+      "name": "HOW-TO-EDIT.md",
+      "filePath": "HOW-TO-EDIT.md",
+      "summary": "Step-by-step non-technical editing guide for Tiyana covering cloning, installing, running locally, editing the workshop content file, previewing, and pushing changes.",
+      "tags": [
+        "documentation",
+        "editing-guide",
+        "onboarding",
+        "workflow"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "document:README.md",
+      "type": "document",
+      "name": "README.md",
+      "filePath": "README.md",
+      "summary": "Project overview for the 'How to Stand Out in the Age of AI' workshop site, covering local development, the main source files, and deployment.",
+      "tags": [
+        "documentation",
+        "entry-point",
+        "overview",
+        "readme"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:package.json",
+      "type": "config",
+      "name": "package.json",
+      "filePath": "package.json",
+      "summary": "Defines the Next.js project metadata, build/dev/start scripts, and runtime and dev dependencies for the workshop site.",
+      "tags": [
+        "configuration",
+        "build-system",
+        "npm",
+        "dependencies"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "config:tsconfig.json",
+      "type": "config",
+      "name": "tsconfig.json",
+      "filePath": "tsconfig.json",
+      "summary": "TypeScript compiler configuration for the Next.js site, setting compiler options and the include/exclude globs that govern which source files are type-checked.",
+      "tags": [
+        "configuration",
+        "typescript",
+        "build-system",
+        "compiler-options"
+      ],
+      "complexity": "simple"
+    }
+  ],
+  "edges": []
+}

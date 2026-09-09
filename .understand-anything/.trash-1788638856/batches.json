@@ -1,10 +1,9 @@
 {
   "schemaVersion": 1,
   "algorithm": "louvain",
-  "totalFiles": 18,
+  "totalFiles": 17,
   "totalBatches": 2,
   "exportsByPath": {
-    ".understand-anything/.understandignore": [],
     "next-env.d.ts": [],
     "next.config.ts": [],
     "postcss.config.mjs": [],
@@ -40,47 +39,55 @@
       "batchIndex": 1,
       "files": [
         {
-          "path": "HOW-TO-EDIT.md",
-          "language": "markdown",
-          "sizeLines": 54,
-          "fileCategory": "docs"
+          "path": "src/components/ProTip.tsx",
+          "language": "typescript",
+          "sizeLines": 49,
+          "fileCategory": "code"
         },
         {
-          "path": "README.md",
-          "language": "markdown",
-          "sizeLines": 26,
-          "fileCategory": "docs"
+          "path": "src/components/StepCard.tsx",
+          "language": "typescript",
+          "sizeLines": 30,
+          "fileCategory": "code"
         },
         {
-          "path": "package.json",
-          "language": "json",
-          "sizeLines": 29,
-          "fileCategory": "config"
-        },
-        {
-          "path": "tsconfig.json",
-          "language": "json",
-          "sizeLines": 41,
-          "fileCategory": "config"
+          "path": "src/content/tiana-ai-positioning-workshop.tsx",
+          "language": "typescript",
+          "sizeLines": 1316,
+          "fileCategory": "code"
         }
       ],
       "batchImportData": {
-        "HOW-TO-EDIT.md": [],
-        "README.md": [],
-        "package.json": [],
-        "tsconfig.json": []
+        "src/components/ProTip.tsx": [],
+        "src/components/StepCard.tsx": [],
+        "src/content/tiana-ai-positioning-workshop.tsx": [
+          "src/components/CodeBlock.tsx",
+          "src/components/ProTip.tsx",
+          "src/components/StepCard.tsx"
+        ]
       },
-      "neighborMap": {}
+      "neighborMap": {
+        "src/content/tiana-ai-positioning-workshop.tsx": [
+          {
+            "path": "src/components/CodeBlock.tsx",
+            "batchIndex": 3,
+            "symbols": [
+              "CodeBlock"
+            ]
+          },
+          {
+            "path": "src/app/page.tsx",
+            "batchIndex": 3,
+            "symbols": [
+              "HomePage"
+            ]
+          }
+        ]
+      }
     },
     {
-      "batchIndex": 2,
+      "batchIndex": 3,
       "files": [
-        {
-          "path": ".understand-anything/.understandignore",
-          "language": "unknown",
-          "sizeLines": 8,
-          "fileCategory": "code"
-        },
         {
           "path": "next-env.d.ts",
           "language": "typescript",
@@ -124,27 +131,9 @@
           "fileCategory": "code"
         },
         {
-          "path": "src/components/ProTip.tsx",
-          "language": "typescript",
-          "sizeLines": 49,
-          "fileCategory": "code"
-        },
-        {
-          "path": "src/components/StepCard.tsx",
-          "language": "typescript",
-          "sizeLines": 30,
-          "fileCategory": "code"
-        },
-        {
           "path": "src/components/TianaSessionFooter.tsx",
           "language": "typescript",
           "sizeLines": 27,
-          "fileCategory": "code"
-        },
-        {
-          "path": "src/content/tiana-ai-positioning-workshop.tsx",
-          "language": "typescript",
-          "sizeLines": 1316,
           "fileCategory": "code"
         },
         {
@@ -161,22 +150,44 @@
         }
       ],
       "batchImportData": {
-        ".understand-anything/.understandignore": [],
         "next-env.d.ts": [],
         "next.config.ts": [],
         "postcss.config.mjs": [],
         "src/app/globals.css": [],
-        "src/app/layout.tsx": [],
-        "src/app/page.tsx": [],
-        "src/components/CodeBlock.tsx": [],
-        "src/components/ProTip.tsx": [],
-        "src/components/StepCard.tsx": [],
+        "src/app/layout.tsx": [
+          "src/app/globals.css"
+        ],
+        "src/app/page.tsx": [
+          "src/components/TianaSessionFooter.tsx",
+          "src/content/tiana-ai-positioning-workshop.tsx"
+        ],
+        "src/components/CodeBlock.tsx": [
+          "src/lib/copyWithConfetti.ts"
+        ],
         "src/components/TianaSessionFooter.tsx": [],
-        "src/content/tiana-ai-positioning-workshop.tsx": [],
         "src/lib/copyWithConfetti.ts": [],
         "tailwind.config.ts": []
       },
-      "neighborMap": {}
+      "neighborMap": {
+        "src/app/page.tsx": [
+          {
+            "path": "src/content/tiana-ai-positioning-workshop.tsx",
+            "batchIndex": 1,
+            "symbols": [
+              "TianaAiPositioningWorkshop"
+            ]
+          }
+        ],
+        "src/components/CodeBlock.tsx": [
+          {
+            "path": "src/content/tiana-ai-positioning-workshop.tsx",
+            "batchIndex": 1,
+            "symbols": [
+              "TianaAiPositioningWorkshop"
+            ]
+          }
+        ]
+      }
     }
   ]
 }

@@ -1,0 +1,314 @@
+{
+  "batchIndex": 1,
+  "nodes": [
+    {
+      "id": "file:src/components/ProTip.tsx",
+      "type": "file",
+      "name": "ProTip Component",
+      "filePath": "src/components/ProTip.tsx",
+      "summary": "Styled notification component for displaying tips, warnings, and info messages with colored borders and backgrounds using Tailwind CSS and the brand purple color scheme.",
+      "tags": ["typescript", "react-component", "reusable", "styled-component", "ui-primitive"],
+      "complexity": "simple"
+    },
+    {
+      "id": "type:src/components/ProTip.tsx:TipType",
+      "type": "type",
+      "name": "TipType",
+      "filePath": "src/components/ProTip.tsx",
+      "summary": "Union type defining the three styles of ProTip notifications: 'tip' (purple), 'warning' (red), and 'info' (cream).",
+      "tags": ["typescript", "type", "union-type", "discriminated"],
+      "complexity": "simple"
+    },
+    {
+      "id": "interface:src/components/ProTip.tsx:ProTipProps",
+      "type": "interface",
+      "name": "ProTipProps",
+      "filePath": "src/components/ProTip.tsx",
+      "summary": "Props interface for ProTip component defining optional type, title, className, and required children.",
+      "tags": ["typescript", "interface", "props"],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/components/ProTip.tsx:ProTip",
+      "type": "function",
+      "name": "ProTip",
+      "filePath": "src/components/ProTip.tsx",
+      "summary": "React component that renders a styled notification box with configurable type (tip/warning/info), optional title, and content. Uses a typeStyles lookup to apply color-coded styling.",
+      "tags": ["typescript", "react-component", "default-export", "presentational"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/components/StepCard.tsx",
+      "type": "file",
+      "name": "StepCard Component",
+      "filePath": "src/components/StepCard.tsx",
+      "summary": "Card component for displaying numbered steps with title and content, featuring hover effects and glass-morphism styling with the brand purple accent color.",
+      "tags": ["typescript", "react-component", "reusable", "styled-component", "ui-primitive"],
+      "complexity": "simple"
+    },
+    {
+      "id": "interface:src/components/StepCard.tsx:StepCardProps",
+      "type": "interface",
+      "name": "StepCardProps",
+      "filePath": "src/components/StepCard.tsx",
+      "summary": "Props interface for StepCard component defining a numeric step identifier, title text, and content children.",
+      "tags": ["typescript", "interface", "props"],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/components/StepCard.tsx:StepCard",
+      "type": "function",
+      "name": "StepCard",
+      "filePath": "src/components/StepCard.tsx",
+      "summary": "React component rendering a numbered card with a step number in a circular badge, title heading, and flexible content area. Includes hover transitions and glass-morphism effects.",
+      "tags": ["typescript", "react-component", "default-export", "presentational"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/content/tiana-ai-positioning-workshop.tsx",
+      "type": "file",
+      "name": "Tiana AI Positioning Workshop Page",
+      "filePath": "src/content/tiana-ai-positioning-workshop.tsx",
+      "summary": "Comprehensive workshop content component for Tiyana Gori's 'How to Stand Out in the Age of AI' positioning workshop. Includes 27 numbered sections with teaching content, exercises, prompt cards for Claude, and interactive workbook elements spanning positioning framework, client awareness levels, and lead generation strategy.",
+      "tags": ["typescript", "react-component", "client-side", "content-heavy", "educational", "interactive"],
+      "complexity": "complex"
+    },
+    {
+      "id": "const:src/content/tiana-ai-positioning-workshop.tsx:LEAVE_WITH",
+      "type": "const",
+      "name": "LEAVE_WITH",
+      "filePath": "src/content/tiana-ai-positioning-workshop.tsx",
+      "summary": "Array of four strings describing the learning outcomes participants should leave the workshop with: positioning statement, awareness clarity, lead generation understanding, and specificity test knowledge.",
+      "tags": ["typescript", "const", "data", "strings", "content"],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/content/tiana-ai-positioning-workshop.tsx:Section",
+      "type": "function",
+      "name": "Section",
+      "filePath": "src/content/tiana-ai-positioning-workshop.tsx",
+      "summary": "Internal component rendering a major section of the workshop with optional numbering, label, title, and flexible children content. Styled with glass-morphism and inset shadows.",
+      "tags": ["typescript", "react-component", "internal-component", "layout"],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/content/tiana-ai-positioning-workshop.tsx:PromptCard",
+      "type": "function",
+      "name": "PromptCard",
+      "filePath": "src/content/tiana-ai-positioning-workshop.tsx",
+      "summary": "Internal component displaying a Claude prompt card with optional step number, title, intro text, and editable code block. Integrates CodeBlock component with filename and editable flag.",
+      "tags": ["typescript", "react-component", "internal-component", "prompt-display"],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/content/tiana-ai-positioning-workshop.tsx:TeachingCard",
+      "type": "function",
+      "name": "TeachingCard",
+      "filePath": "src/content/tiana-ai-positioning-workshop.tsx",
+      "summary": "Internal component for displaying teaching content with optional eyebrow label, title, step indicator, and flexible children. Used for each teaching point throughout the workshop with hover effects.",
+      "tags": ["typescript", "react-component", "internal-component", "teaching-content"],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/content/tiana-ai-positioning-workshop.tsx:FrameworkBlock",
+      "type": "function",
+      "name": "FrameworkBlock",
+      "filePath": "src/content/tiana-ai-positioning-workshop.tsx",
+      "summary": "Internal component rendering a framework or structural outline as lines of text with special handling for blank lines as vertical spacing.",
+      "tags": ["typescript", "react-component", "internal-component", "text-display"],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/content/tiana-ai-positioning-workshop.tsx:StructureCard",
+      "type": "function",
+      "name": "StructureCard",
+      "filePath": "src/content/tiana-ai-positioning-workshop.tsx",
+      "summary": "Internal component displaying a workshop structure segment with step number, title, duration, and a bulleted list of agenda items styled as individual badges.",
+      "tags": ["typescript", "react-component", "internal-component", "agenda-display"],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/content/tiana-ai-positioning-workshop.tsx:BulletList",
+      "type": "function",
+      "name": "BulletList",
+      "filePath": "src/content/tiana-ai-positioning-workshop.tsx",
+      "summary": "Internal utility component for rendering an unordered list of items with purple bullet points and consistent text styling.",
+      "tags": ["typescript", "react-component", "internal-component", "utility", "list-display"],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/content/tiana-ai-positioning-workshop.tsx:WorkshopRecordingCard",
+      "type": "function",
+      "name": "WorkshopRecordingCard",
+      "filePath": "src/content/tiana-ai-positioning-workshop.tsx",
+      "summary": "Internal component displaying a bonus session recording with title, subtitle, and embedded YouTube iframe. Features gradient border and professional styling.",
+      "tags": ["typescript", "react-component", "internal-component", "video-embed", "media"],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/content/tiana-ai-positioning-workshop.tsx:TianaAiPositioningWorkshop",
+      "type": "function",
+      "name": "TianaAiPositioningWorkshop",
+      "filePath": "src/content/tiana-ai-positioning-workshop.tsx",
+      "summary": "Main export component rendering the complete interactive workshop content. Orchestrates all internal components (Section, PromptCard, TeachingCard, etc.) to create a comprehensive educational experience spanning positioning theory, awareness mapping, client journey analysis, and workbook exercises.",
+      "tags": ["typescript", "react-component", "default-export", "page-component", "orchestrator"],
+      "complexity": "complex"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:src/components/ProTip.tsx",
+      "target": "function:src/components/ProTip.tsx:ProTip",
+      "type": "defines",
+      "weight": 1.0,
+      "confidence": 1.0
+    },
+    {
+      "source": "function:src/components/ProTip.tsx:ProTip",
+      "target": "interface:src/components/ProTip.tsx:ProTipProps",
+      "type": "uses",
+      "weight": 1.0,
+      "confidence": 1.0
+    },
+    {
+      "source": "function:src/components/ProTip.tsx:ProTip",
+      "target": "type:src/components/ProTip.tsx:TipType",
+      "type": "uses",
+      "weight": 0.9,
+      "confidence": 1.0
+    },
+    {
+      "source": "file:src/components/StepCard.tsx",
+      "target": "function:src/components/StepCard.tsx:StepCard",
+      "type": "defines",
+      "weight": 1.0,
+      "confidence": 1.0
+    },
+    {
+      "source": "function:src/components/StepCard.tsx:StepCard",
+      "target": "interface:src/components/StepCard.tsx:StepCardProps",
+      "type": "uses",
+      "weight": 1.0,
+      "confidence": 1.0
+    },
+    {
+      "source": "file:src/content/tiana-ai-positioning-workshop.tsx",
+      "target": "file:src/components/CodeBlock.tsx",
+      "type": "imports",
+      "weight": 0.95,
+      "confidence": 0.98
+    },
+    {
+      "source": "file:src/content/tiana-ai-positioning-workshop.tsx",
+      "target": "file:src/components/ProTip.tsx",
+      "type": "imports",
+      "weight": 0.95,
+      "confidence": 1.0
+    },
+    {
+      "source": "file:src/content/tiana-ai-positioning-workshop.tsx",
+      "target": "file:src/components/StepCard.tsx",
+      "type": "imports",
+      "weight": 0.95,
+      "confidence": 1.0
+    },
+    {
+      "source": "file:src/content/tiana-ai-positioning-workshop.tsx",
+      "target": "function:src/content/tiana-ai-positioning-workshop.tsx:TianaAiPositioningWorkshop",
+      "type": "defines",
+      "weight": 1.0,
+      "confidence": 1.0
+    },
+    {
+      "source": "function:src/content/tiana-ai-positioning-workshop.tsx:TianaAiPositioningWorkshop",
+      "target": "function:src/content/tiana-ai-positioning-workshop.tsx:Section",
+      "type": "uses",
+      "weight": 0.98,
+      "confidence": 0.99
+    },
+    {
+      "source": "function:src/content/tiana-ai-positioning-workshop.tsx:TianaAiPositioningWorkshop",
+      "target": "function:src/content/tiana-ai-positioning-workshop.tsx:PromptCard",
+      "type": "uses",
+      "weight": 0.95,
+      "confidence": 0.99
+    },
+    {
+      "source": "function:src/content/tiana-ai-positioning-workshop.tsx:TianaAiPositioningWorkshop",
+      "target": "function:src/content/tiana-ai-positioning-workshop.tsx:TeachingCard",
+      "type": "uses",
+      "weight": 0.98,
+      "confidence": 0.99
+    },
+    {
+      "source": "function:src/content/tiana-ai-positioning-workshop.tsx:TianaAiPositioningWorkshop",
+      "target": "function:src/content/tiana-ai-positioning-workshop.tsx:StructureCard",
+      "type": "uses",
+      "weight": 0.85,
+      "confidence": 0.98
+    },
+    {
+      "source": "function:src/content/tiana-ai-positioning-workshop.tsx:TianaAiPositioningWorkshop",
+      "target": "function:src/content/tiana-ai-positioning-workshop.tsx:BulletList",
+      "type": "uses",
+      "weight": 0.9,
+      "confidence": 0.99
+    },
+    {
+      "source": "function:src/content/tiana-ai-positioning-workshop.tsx:TianaAiPositioningWorkshop",
+      "target": "function:src/content/tiana-ai-positioning-workshop.tsx:WorkshopRecordingCard",
+      "type": "uses",
+      "weight": 0.8,
+      "confidence": 0.98
+    },
+    {
+      "source": "function:src/content/tiana-ai-positioning-workshop.tsx:TianaAiPositioningWorkshop",
+      "target": "function:src/components/ProTip.tsx:ProTip",
+      "type": "uses",
+      "weight": 0.85,
+      "confidence": 0.95
+    },
+    {
+      "source": "function:src/content/tiana-ai-positioning-workshop.tsx:TianaAiPositioningWorkshop",
+      "target": "function:src/components/StepCard.tsx:StepCard",
+      "type": "uses",
+      "weight": 0.8,
+      "confidence": 0.95
+    },
+    {
+      "source": "function:src/content/tiana-ai-positioning-workshop.tsx:TianaAiPositioningWorkshop",
+      "target": "const:src/content/tiana-ai-positioning-workshop.tsx:LEAVE_WITH",
+      "type": "uses",
+      "weight": 0.9,
+      "confidence": 0.99
+    },
+    {
+      "source": "function:src/content/tiana-ai-positioning-workshop.tsx:PromptCard",
+      "target": "file:src/components/CodeBlock.tsx",
+      "type": "uses",
+      "weight": 0.95,
+      "confidence": 0.99
+    },
+    {
+      "source": "function:src/content/tiana-ai-positioning-workshop.tsx:Section",
+      "target": "function:src/content/tiana-ai-positioning-workshop.tsx:BulletList",
+      "type": "uses",
+      "weight": 0.7,
+      "confidence": 0.85
+    },
+    {
+      "source": "function:src/content/tiana-ai-positioning-workshop.tsx:TeachingCard",
+      "target": "function:src/content/tiana-ai-positioning-workshop.tsx:BulletList",
+      "type": "uses",
+      "weight": 0.7,
+      "confidence": 0.85
+    },
+    {
+      "source": "function:src/content/tiana-ai-positioning-workshop.tsx:StructureCard",
+      "target": "function:src/content/tiana-ai-positioning-workshop.tsx:BulletList",
+      "type": "uses",
+      "weight": 0.65,
+      "confidence": 0.80
+    }
+  ]
+}

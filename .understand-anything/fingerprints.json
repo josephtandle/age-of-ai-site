@@ -1,7 +1,7 @@
 {
   "version": "1.0.0",
-  "gitCommitHash": "39571f43caeb6ab986faa04c22d9577c1b2ed676",
-  "generatedAt": "2026-06-27T20:13:25.649Z",
+  "gitCommitHash": "5f1d9115ff5b75db0c0fb29d448434d9470e8cb5",
+  "generatedAt": "2026-09-05T20:07:30.951Z",
   "files": {
     "HOW-TO-EDIT.md": {
       "filePath": "HOW-TO-EDIT.md",
@@ -51,16 +51,6 @@
       "totalLines": 11,
       "hasStructuralAnalysis": true
     },
-    "package.json": {
-      "filePath": "package.json",
-      "contentHash": "3fa836a521c5896bf4b866e245aab7e36b3e5314a3c460915ca4b59cf4550147",
-      "functions": [],
-      "classes": [],
-      "imports": [],
-      "exports": [],
-      "totalLines": 30,
-      "hasStructuralAnalysis": true
-    },
     "postcss.config.mjs": {
       "filePath": "postcss.config.mjs",
       "contentHash": "311c318dbb665205803cbfba7e69101972204feadc763b58bcdf7f74b374b5a0",
@@ -83,7 +73,7 @@
     },
     "src/app/globals.css": {
       "filePath": "src/app/globals.css",
-      "contentHash": "0bbde8cd0bd75543fb04082b5093d533919fef319510449e07f32c7fbf0119fb",
+      "contentHash": "4dde2c3ee61855e18d679bbcd0c69a4c7bf743b347db2a35a9834c00c35b4694",
       "functions": [],
       "classes": [],
       "imports": [],
@@ -93,7 +83,7 @@
     },
     "src/app/layout.tsx": {
       "filePath": "src/app/layout.tsx",
-      "contentHash": "69e83787ff227fb88c26ec21d13f2302909ba2f9b84cb0be09d0ccd2996ad22f",
+      "contentHash": "40041967d494eeaa7f015ce9e7d8139c3de808f8849b54063c7c9a148a84f2b3",
       "functions": [
         {
           "name": "RootLayout",
@@ -164,7 +154,7 @@
     },
     "src/components/CodeBlock.tsx": {
       "filePath": "src/components/CodeBlock.tsx",
-      "contentHash": "4a99c256a67e25c43b981ff6550f4ce2055dc09497b2e67d9dcd9eacd2f5ce43",
+      "contentHash": "add8aad197cd9e2d4ae8169de9bc274727ac2b078d0338b1c90cf4d6b2d218c9",
       "functions": [
         {
           "name": "toCodexPrompt",
@@ -222,7 +212,7 @@
     },
     "src/components/ProTip.tsx": {
       "filePath": "src/components/ProTip.tsx",
-      "contentHash": "f5e76be345a40af33f8f6f8ace6eaf926482418f6090164ab38e4d0d12b02a81",
+      "contentHash": "1e0b22935dbaa4fc4ff6a266c9d2757adf6a9666852e4881fe830f7237a96e02",
       "functions": [
         {
           "name": "ProTip",
@@ -250,7 +240,7 @@
     },
     "src/components/StepCard.tsx": {
       "filePath": "src/components/StepCard.tsx",
-      "contentHash": "e9ef4952c6c880ddd947393443db1d3d5eea0eff0387fe0cde547c71689bab44",
+      "contentHash": "6a94c688f1859f151fa40ddeefa6f465d24e9f70e10af61108121f7f0a30c422",
       "functions": [
         {
           "name": "StepCard",
@@ -278,7 +268,7 @@
     },
     "src/components/TianaSessionFooter.tsx": {
       "filePath": "src/components/TianaSessionFooter.tsx",
-      "contentHash": "b610fe1466f96837d9092f495f05bd9f0ffc2014803f288c8a22972d188611bc",
+      "contentHash": "9aa87a844520dc7916e566f89c09c00e324f593b3b1f391c92d9f4e719ef7c36",
       "functions": [
         {
           "name": "TianaSessionFooter",
@@ -297,7 +287,7 @@
     },
     "src/content/tiana-ai-positioning-workshop.tsx": {
       "filePath": "src/content/tiana-ai-positioning-workshop.tsx",
-      "contentHash": "eb040804be0bb71c718ddb88e9f8f05ec2cca60c8ed23e3769ddceb9ff2a4d0b",
+      "contentHash": "39357b4f702b9f950257b939eb375027cf24a14804e29a318c9c1db16a2fe467",
       "functions": [
         {
           "name": "Section",
@@ -391,7 +381,7 @@
     },
     "src/lib/copyWithConfetti.ts": {
       "filePath": "src/lib/copyWithConfetti.ts",
-      "contentHash": "99888d632c51111c6e422b457c7faf6d778339b37d81a41f54eadb883d07d9f8",
+      "contentHash": "7bdf0a8ad147b4e4381b4ea83fd81032ae7bbe4000211d932ceb7b667d6fc4d7",
       "functions": [
         {
           "name": "getOrigin",
@@ -428,7 +418,7 @@
     },
     "tailwind.config.ts": {
       "filePath": "tailwind.config.ts",
-      "contentHash": "0598fa0fae9291b2b0b4183d9dd5344f055a88aa8c9f58e69ade471ad42fbda5",
+      "contentHash": "d0e7f5430c09256c9b9429fcb4cc15b67b88af912ce3fabb1cbd858eacecc361",
       "functions": [],
       "classes": [],
       "imports": [
@@ -441,16 +431,6 @@
       ],
       "exports": [],
       "totalLines": 56,
-      "hasStructuralAnalysis": true
-    },
-    "tsconfig.json": {
-      "filePath": "tsconfig.json",
-      "contentHash": "55134881a23efd2a1f9266d2d0752731ff9c40d0e867136cd8863ea679560a09",
-      "functions": [],
-      "classes": [],
-      "imports": [],
-      "exports": [],
-      "totalLines": 42,
       "hasStructuralAnalysis": true
     }
   }

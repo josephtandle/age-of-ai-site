@@ -14,7 +14,7 @@
       "Tailwind CSS"
     ],
     "description": "Standalone Next.js marketing/landing site for Tiyana Gori's 'How to Stand Out in the Age of AI' workshop page, featuring editable copy-and-paste prompt blocks.",
-    "analyzedAt": "2026-09-05T20:07:24Z",
+    "analyzedAt": "2026-09-05T20:07:12Z",
     "gitCommitHash": "5f1d9115ff5b75db0c0fb29d448434d9470e8cb5"
   },
   "nodes": [
@@ -859,6 +859,18 @@
   ],
   "layers": [
     {
+      "id": "layer:config",
+      "name": "Build Configuration",
+      "description": "Next.js, Tailwind, PostCSS, and TypeScript configuration files that control build behavior, styling framework, and type checking",
+      "nodeIds": [
+        "config:next.config.ts",
+        "config:tailwind.config.ts",
+        "config:postcss.config.mjs",
+        "config:tsconfig.json",
+        "config:package.json"
+      ]
+    },
+    {
       "id": "layer:styling",
       "name": "Design System & Styling",
       "description": "Global CSS and Tailwind theme configuration including color palette (dark, cream, purple, pink), typography, keyframe animations (float-slow, float-slower, gradient-shift, fade-in-up, glow-pulse, shimmer), and design tokens",
@@ -898,6 +910,14 @@
   ],
   "tour": [
     {
+      "order": 1,
+      "title": "Project Overview",
+      "description": "Start here to understand the project's purpose, structure, and deployment strategy. The README explains this is Tiyana Gori's standalone workshop site with interactive, editable prompt blocks.",
+      "nodeIds": [
+        "document:README.md"
+      ]
+    },
+    {
       "order": 2,
       "title": "Application Entry Point & Root Layout",
       "description": "These are the foundational pages where everything starts. page.tsx renders the workshop content, while layout.tsx sets up the HTML structure, metadata, typography, and the animated aurora background that defines the visual aesthetic.",
@@ -911,7 +931,8 @@
       "title": "Global Design System & Styling",
       "description": "The visual foundation of the site. globals.css contains all base styles and animations (aurora floats, shimmer effects, glow pulses). tailwind.config.ts extends Tailwind with custom colors (purple #8B79D4, cream, pink), animations, and the Plus Jakarta Sans font family. Understanding these two files shows you how the cohesive dark-mode aesthetic is built.",
       "nodeIds": [
-        "file:src/app/globals.css"
+        "file:src/app/globals.css",
+        "file:tailwind.config.ts"
       ]
     },
     {
@@ -946,7 +967,9 @@
       "title": "Build Configuration",
       "description": "The supporting configuration files that enable the Next.js + TypeScript + Tailwind stack. next.config.ts configures Turbopack, tsconfig.json sets TypeScript strict mode and path aliases (@/ for imports), and package.json defines dependencies and scripts. These ensure the developer experience and build process work smoothly.",
       "nodeIds": [
-        "file:next.config.ts"
+        "file:next.config.ts",
+        "file:tsconfig.json",
+        "file:package.json"
       ]
     }
   ]

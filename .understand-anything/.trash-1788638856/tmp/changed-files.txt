@@ -1,0 +1,9 @@
+src/app/globals.css
+src/app/layout.tsx
+src/components/CodeBlock.tsx
+src/components/ProTip.tsx
+src/components/StepCard.tsx
+src/components/TianaSessionFooter.tsx
+src/content/tiana-ai-positioning-workshop.tsx
+src/lib/copyWithConfetti.ts
+tailwind.config.ts
