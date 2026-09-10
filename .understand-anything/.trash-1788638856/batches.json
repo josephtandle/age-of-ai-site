@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "algorithm": "louvain",
   "totalFiles": 17,
-  "totalBatches": 3,
+  "totalBatches": 2,
   "exportsByPath": {
     "next-env.d.ts": [],
     "next.config.ts": [],
@@ -84,42 +84,6 @@
           }
         ]
       }
-    },
-    {
-      "batchIndex": 2,
-      "files": [
-        {
-          "path": "HOW-TO-EDIT.md",
-          "language": "markdown",
-          "sizeLines": 54,
-          "fileCategory": "docs"
-        },
-        {
-          "path": "README.md",
-          "language": "markdown",
-          "sizeLines": 26,
-          "fileCategory": "docs"
-        },
-        {
-          "path": "package.json",
-          "language": "json",
-          "sizeLines": 29,
-          "fileCategory": "config"
-        },
-        {
-          "path": "tsconfig.json",
-          "language": "json",
-          "sizeLines": 41,
-          "fileCategory": "config"
-        }
-      ],
-      "batchImportData": {
-        "HOW-TO-EDIT.md": [],
-        "README.md": [],
-        "package.json": [],
-        "tsconfig.json": []
-      },
-      "neighborMap": {}
     },
     {
       "batchIndex": 3,

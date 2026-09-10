@@ -1,0 +1,44 @@
+[
+  {
+    "order": 1,
+    "title": "Project Overview",
+    "description": "Start here to understand the project's purpose, structure, and deployment strategy. The README explains this is Tiyana Gori's standalone workshop site with interactive, editable prompt blocks.",
+    "nodeIds": ["document:README.md"]
+  },
+  {
+    "order": 2,
+    "title": "Application Entry Point & Root Layout",
+    "description": "These are the foundational pages where everything starts. page.tsx renders the workshop content, while layout.tsx sets up the HTML structure, metadata, typography, and the animated aurora background that defines the visual aesthetic.",
+    "nodeIds": ["file:src/app/page.tsx", "file:src/app/layout.tsx"]
+  },
+  {
+    "order": 3,
+    "title": "Global Design System & Styling",
+    "description": "The visual foundation of the site. globals.css contains all base styles and animations (aurora floats, shimmer effects, glow pulses). tailwind.config.ts extends Tailwind with custom colors (purple #8B79D4, cream, pink), animations, and the Plus Jakarta Sans font family. Understanding these two files shows you how the cohesive dark-mode aesthetic is built.",
+    "nodeIds": ["file:src/app/globals.css", "file:tailwind.config.ts"]
+  },
+  {
+    "order": 4,
+    "title": "Reusable Component Library",
+    "description": "Four essential UI components compose the workshop page: CodeBlock (interactive prompt editor with confetti copy), StepCard (numbered step containers), ProTip (callout boxes for tips/warnings), and TianaSessionFooter (footer with links). Each uses the same color palette and follows a consistent visual language.",
+    "nodeIds": ["file:src/components/CodeBlock.tsx", "file:src/components/StepCard.tsx", "file:src/components/ProTip.tsx", "file:src/components/TianaSessionFooter.tsx"]
+  },
+  {
+    "order": 5,
+    "title": "Interactive Features & Utilities",
+    "description": "The copyWithConfetti utility brings delight to the copy-to-clipboard action. It uses canvas-confetti to animate particles on click, with color origin computed from the button's position. This is where user interaction meets visual feedback.",
+    "nodeIds": ["file:src/lib/copyWithConfetti.ts"]
+  },
+  {
+    "order": 6,
+    "title": "Workshop Content Structure",
+    "description": "The largest file in the project (~1316 lines). This file defines the entire workshop layout using Section, PromptCard, and TeachingCard sub-components. It orchestrates the visual hierarchy, integrates all UI components, and contains the actual workshop content. This is where the page content is authored and organized.",
+    "nodeIds": ["file:src/content/tiana-ai-positioning-workshop.tsx"]
+  },
+  {
+    "order": 7,
+    "title": "Build Configuration",
+    "description": "The supporting configuration files that enable the Next.js + TypeScript + Tailwind stack. next.config.ts configures Turbopack, tsconfig.json sets TypeScript strict mode and path aliases (@/ for imports), and package.json defines dependencies and scripts. These ensure the developer experience and build process work smoothly.",
+    "nodeIds": ["file:next.config.ts", "file:tsconfig.json", "file:package.json"]
+  }
+]

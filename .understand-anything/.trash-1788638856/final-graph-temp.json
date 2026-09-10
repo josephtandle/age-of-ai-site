@@ -1,0 +1,976 @@
+{
+  "version": "1.0.0",
+  "project": {
+    "name": "age-of-ai-site",
+    "languages": [
+      "css",
+      "javascript",
+      "markdown",
+      "typescript"
+    ],
+    "frameworks": [
+      "Next.js",
+      "React",
+      "Tailwind CSS"
+    ],
+    "description": "Standalone Next.js marketing/landing site for Tiyana Gori's 'How to Stand Out in the Age of AI' workshop page, featuring editable copy-and-paste prompt blocks.",
+    "analyzedAt": "2026-09-05T20:07:12Z",
+    "gitCommitHash": "5f1d9115ff5b75db0c0fb29d448434d9470e8cb5"
+  },
+  "nodes": [
+    {
+      "id": "file:src/components/ProTip.tsx",
+      "type": "file",
+      "name": "ProTip.tsx",
+      "path": "src/components/ProTip.tsx",
+      "summary": "Presentational callout component rendering tip/note/warning styled boxes with a title and children.",
+      "tags": [
+        "react",
+        "ui-component",
+        "callout",
+        "presentational"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:type:src/components/ProTip.tsx:TipType",
+      "type": "type",
+      "name": "TipType",
+      "filePath": "src/components/ProTip.tsx",
+      "summary": "Union type defining the three styles of ProTip notifications: 'tip' (purple), 'warning' (red), and 'info' (cream).",
+      "tags": [
+        "typescript",
+        "type",
+        "union-type",
+        "discriminated"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:interface:src/components/ProTip.tsx:ProTipProps",
+      "type": "interface",
+      "name": "ProTipProps",
+      "filePath": "src/components/ProTip.tsx",
+      "summary": "Props interface for ProTip component defining optional type, title, className, and required children.",
+      "tags": [
+        "typescript",
+        "interface",
+        "props"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/components/ProTip.tsx:ProTip",
+      "type": "function",
+      "name": "ProTip",
+      "path": "src/components/ProTip.tsx",
+      "summary": "Default-exported callout component rendering a styled tip/note/warning box with title and children.",
+      "tags": [
+        "react",
+        "ui-component",
+        "callout"
+      ],
+      "complexity": "simple",
+      "lineRange": {
+        "start": 33,
+        "end": 49
+      }
+    },
+    {
+      "id": "file:src/components/StepCard.tsx",
+      "type": "file",
+      "name": "StepCard.tsx",
+      "path": "src/components/StepCard.tsx",
+      "summary": "Presentational card component rendering a numbered step with a title and body content.",
+      "tags": [
+        "react",
+        "ui-component",
+        "card",
+        "presentational"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:interface:src/components/StepCard.tsx:StepCardProps",
+      "type": "interface",
+      "name": "StepCardProps",
+      "filePath": "src/components/StepCard.tsx",
+      "summary": "Props interface for StepCard component defining a numeric step identifier, title text, and content children.",
+      "tags": [
+        "typescript",
+        "interface",
+        "props"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/components/StepCard.tsx:StepCard",
+      "type": "function",
+      "name": "StepCard",
+      "path": "src/components/StepCard.tsx",
+      "summary": "Default-exported card component rendering a numbered step with title and content.",
+      "tags": [
+        "react",
+        "ui-component",
+        "card"
+      ],
+      "complexity": "simple",
+      "lineRange": {
+        "start": 9,
+        "end": 30
+      }
+    },
+    {
+      "id": "file:src/content/tiana-ai-positioning-workshop.tsx",
+      "type": "file",
+      "name": "tiana-ai-positioning-workshop.tsx",
+      "path": "src/content/tiana-ai-positioning-workshop.tsx",
+      "summary": "The main interactive workshop content: a large client component assembling the full AI positioning workshop from section, prompt-card, teaching-card, framework, structure, and recording sub-components.",
+      "tags": [
+        "react",
+        "client-component",
+        "content",
+        "workshop",
+        "long-form"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:const:src/content/tiana-ai-positioning-workshop.tsx:LEAVE_WITH",
+      "type": "const",
+      "name": "LEAVE_WITH",
+      "filePath": "src/content/tiana-ai-positioning-workshop.tsx",
+      "summary": "Array of four strings describing the learning outcomes participants should leave the workshop with: positioning statement, awareness clarity, lead generation understanding, and specificity test knowledge.",
+      "tags": [
+        "typescript",
+        "const",
+        "data",
+        "strings",
+        "content"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:src/content/tiana-ai-positioning-workshop.tsx:Section",
+      "type": "function",
+      "name": "Section",
+      "path": "src/content/tiana-ai-positioning-workshop.tsx",
+      "summary": "Layout helper rendering a numbered, labeled workshop section wrapper with an anchor id.",
+      "tags": [
+        "react",
+        "layout",
+        "section",
+        "presentational"
+      ],
+      "complexity": "simple",
+      "lineRange": {
+        "start": 7,
+        "end": 39
+      }
+    },
+    {
+      "id": "function:src/content/tiana-ai-positioning-workshop.tsx:PromptCard",
+      "type": "function",
+      "name": "PromptCard",
+      "path": "src/content/tiana-ai-positioning-workshop.tsx",
+      "summary": "Card wrapping an intro and a CodeBlock prompt with a numbered title for a workshop exercise.",
+      "tags": [
+        "react",
+        "card",
+        "prompt",
+        "presentational"
+      ],
+      "complexity": "simple",
+      "lineRange": {
+        "start": 41,
+        "end": 75
+      }
+    },
+    {
+      "id": "function:src/content/tiana-ai-positioning-workshop.tsx:TeachingCard",
+      "type": "function",
+      "name": "TeachingCard",
+      "path": "src/content/tiana-ai-positioning-workshop.tsx",
+      "summary": "Card presenting a teaching block with step, eyebrow, title, and content for the workshop flow.",
+      "tags": [
+        "react",
+        "card",
+        "teaching",
+        "presentational"
+      ],
+      "complexity": "simple",
+      "lineRange": {
+        "start": 77,
+        "end": 107
+      }
+    },
+    {
+      "id": "function:src/content/tiana-ai-positioning-workshop.tsx:FrameworkBlock",
+      "type": "function",
+      "name": "FrameworkBlock",
+      "path": "src/content/tiana-ai-positioning-workshop.tsx",
+      "summary": "Renders a list of framework lines as a styled multi-line block.",
+      "tags": [
+        "react",
+        "presentational",
+        "framework",
+        "list"
+      ],
+      "complexity": "simple",
+      "lineRange": {
+        "start": 109,
+        "end": 121
+      }
+    },
+    {
+      "id": "function:src/content/tiana-ai-positioning-workshop.tsx:StructureCard",
+      "type": "function",
+      "name": "StructureCard",
+      "path": "src/content/tiana-ai-positioning-workshop.tsx",
+      "summary": "Card displaying a numbered agenda structure item with title, time, and a list of sub-items.",
+      "tags": [
+        "react",
+        "card",
+        "agenda",
+        "presentational"
+      ],
+      "complexity": "simple",
+      "lineRange": {
+        "start": 123,
+        "end": 160
+      }
+    },
+    {
+      "id": "function:src/content/tiana-ai-positioning-workshop.tsx:BulletList",
+      "type": "function",
+      "name": "BulletList",
+      "path": "src/content/tiana-ai-positioning-workshop.tsx",
+      "summary": "Renders an array of strings as a styled bulleted list.",
+      "tags": [
+        "react",
+        "presentational",
+        "list"
+      ],
+      "complexity": "simple",
+      "lineRange": {
+        "start": 162,
+        "end": 173
+      }
+    },
+    {
+      "id": "function:src/content/tiana-ai-positioning-workshop.tsx:WorkshopRecordingCard",
+      "type": "function",
+      "name": "WorkshopRecordingCard",
+      "path": "src/content/tiana-ai-positioning-workshop.tsx",
+      "summary": "Card embedding a workshop video recording by id with a title and subtitle.",
+      "tags": [
+        "react",
+        "card",
+        "video",
+        "embed"
+      ],
+      "complexity": "simple",
+      "lineRange": {
+        "start": 175,
+        "end": 208
+      }
+    },
+    {
+      "id": "function:src/content/tiana-ai-positioning-workshop.tsx:TianaAiPositioningWorkshop",
+      "type": "function",
+      "name": "TianaAiPositioningWorkshop",
+      "path": "src/content/tiana-ai-positioning-workshop.tsx",
+      "summary": "Default-exported top-level workshop component assembling the entire interactive AI positioning session from all sub-components, prompts, and content sections.",
+      "tags": [
+        "react",
+        "client-component",
+        "workshop",
+        "content",
+        "orchestrator"
+      ],
+      "complexity": "complex",
+      "lineRange": {
+        "start": 217,
+        "end": 1316
+      }
+    },
+    {
+      "id": "file:.understand-anything/.understandignore",
+      "type": "file",
+      "name": ".understandignore",
+      "path": ".understand-anything/.understandignore",
+      "summary": "Ignore-list for the understand-anything indexer, excluding build artifacts and noise from code analysis.",
+      "tags": [
+        "config",
+        "ignore-file",
+        "tooling",
+        "indexing"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:next-env.d.ts",
+      "type": "file",
+      "name": "Next.js Type Definitions",
+      "filePath": "next-env.d.ts",
+      "summary": "TypeScript type definition file auto-generated by Next.js. References Next framework types and image types. Not to be edited manually. Provides type augmentation for Next.js runtime and route generation.",
+      "tags": [
+        "typescript",
+        "type-definitions",
+        "config",
+        "next.js",
+        "generated"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:next.config.ts",
+      "type": "file",
+      "name": "Next.js Config",
+      "filePath": "next.config.ts",
+      "summary": "Next.js configuration module. Configures Turbopack with the project root resolved via path module. Exports NextConfig object for build and runtime optimization.",
+      "tags": [
+        "typescript",
+        "config",
+        "next.js",
+        "build",
+        "turbopack"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:postcss.config.mjs",
+      "type": "file",
+      "name": "PostCSS Config",
+      "filePath": "postcss.config.mjs",
+      "summary": "PostCSS configuration module. Loads Tailwind CSS and Autoprefixer plugins for CSS processing. Standard Next.js CSS pipeline setup.",
+      "tags": [
+        "javascript",
+        "config",
+        "postcss",
+        "tailwind",
+        "css"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/app/globals.css",
+      "type": "file",
+      "name": "Global Styles",
+      "filePath": "src/app/globals.css",
+      "summary": "Global stylesheet with Tailwind directives and comprehensive design system. Defines color variables (purple #8B79D4, pink #F5C3C6, dark #151515, cream #FCF4EB), custom CSS properties, animations (gradient-shift, dot-drift), card/button effects (glass morphism, shimmer, hover states), and utility classes for the workshop site's visual identity.",
+      "tags": [
+        "css",
+        "styles",
+        "tailwind",
+        "design-system",
+        "animations",
+        "variables",
+        "global"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/app/layout.tsx",
+      "type": "file",
+      "name": "Root Layout Component",
+      "filePath": "src/app/layout.tsx",
+      "summary": "Next.js root layout component. Imports and applies globals.css for styling. Sets metadata (title, description, OpenGraph, Twitter cards) for SEO. Loads Plus Jakarta Sans Google font. Renders floating aurora orb background elements with radial gradients and animations. Wraps page content in HTML/body structure with Tailwind classes.",
+      "tags": [
+        "typescript",
+        "react",
+        "component",
+        "layout",
+        "next.js",
+        "metadata",
+        "font",
+        "css"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:src/app/page.tsx",
+      "type": "file",
+      "name": "Home Page",
+      "filePath": "src/app/page.tsx",
+      "summary": "Next.js page component rendering the home route. Imports and renders TianaAiPositioningWorkshop content (from batch 1) and TianaSessionFooter. Wraps components in main element with responsive padding and max-width container.",
+      "tags": [
+        "typescript",
+        "react",
+        "component",
+        "page",
+        "next.js"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/components/CodeBlock.tsx",
+      "type": "file",
+      "name": "CodeBlock Component",
+      "filePath": "src/components/CodeBlock.tsx",
+      "summary": "Client-side component for rendering copy-paste code blocks with interactive features. Supports editable textarea mode, syntax highlighting placeholders, magnetic hover effect on copy button, and optional Codex variant copy (transforms Claude references to Codex equivalents). Integrates confetti animation on copy via copyWithConfetti utility. Includes MagneticCopyButton subcomponent with mouse-tracking offset effects.",
+      "tags": [
+        "typescript",
+        "react",
+        "component",
+        "client",
+        "interactive",
+        "copy-paste",
+        "editable"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:src/components/TianaSessionFooter.tsx",
+      "type": "file",
+      "name": "Session Footer Component",
+      "filePath": "src/components/TianaSessionFooter.tsx",
+      "summary": "Presentational footer component for session pages. Renders horizontal links (Instagram, Tiyara.co) with hover color effects. Displays copyright notice. Uses responsive Tailwind classes for layout and styling.",
+      "tags": [
+        "typescript",
+        "react",
+        "component",
+        "footer",
+        "presentational"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:src/lib/copyWithConfetti.ts",
+      "type": "file",
+      "name": "Copy with Confetti Utility",
+      "filePath": "src/lib/copyWithConfetti.ts",
+      "summary": "Utility function combining clipboard API with canvas-confetti library. Copies text to clipboard and triggers animated confetti burst. Calculates confetti origin based on click event coordinates, with fallback to center. Uses branded color palette (purple, light purple, pink, cream).",
+      "tags": [
+        "typescript",
+        "utility",
+        "client",
+        "animation",
+        "clipboard",
+        "confetti"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:tailwind.config.ts",
+      "type": "file",
+      "name": "Tailwind Config",
+      "filePath": "tailwind.config.ts",
+      "summary": "Tailwind CSS configuration extending the default theme. Defines content globs for template files. Extends color palette (dark, cream, purple, pink) and font family (Plus Jakarta Sans). Adds custom keyframes for animations (float-slow, float-slower, gradient-shift, fade-in-up, glow-pulse, shimmer) with corresponding animation definitions.",
+      "tags": [
+        "typescript",
+        "config",
+        "tailwind",
+        "design-system",
+        "animations",
+        "colors"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:src/app/layout.tsx:RootLayout",
+      "type": "function",
+      "name": "RootLayout",
+      "path": "src/app/layout.tsx",
+      "summary": "Default-exported root layout component rendering the HTML/body shell with fonts and wrapping all child pages.",
+      "tags": [
+        "react",
+        "layout",
+        "root",
+        "app-router"
+      ],
+      "complexity": "simple",
+      "lineRange": {
+        "start": 44,
+        "end": 70
+      }
+    },
+    {
+      "id": "function:src/app/page.tsx:HomePage",
+      "type": "function",
+      "name": "HomePage",
+      "path": "src/app/page.tsx",
+      "summary": "Default-exported home page component rendering the workshop content and the session footer.",
+      "tags": [
+        "react",
+        "page",
+        "entry-point"
+      ],
+      "complexity": "simple",
+      "lineRange": {
+        "start": 4,
+        "end": 13
+      }
+    },
+    {
+      "id": "function:src/components/CodeBlock.tsx:MagneticCopyButton",
+      "type": "function",
+      "name": "MagneticCopyButton",
+      "path": "src/components/CodeBlock.tsx",
+      "summary": "Copy button that applies a magnetic cursor-follow offset on hover (disabled for reduced-motion users).",
+      "tags": [
+        "react",
+        "ui-component",
+        "interaction",
+        "hover"
+      ],
+      "complexity": "simple",
+      "lineRange": {
+        "start": 30,
+        "end": 63
+      }
+    },
+    {
+      "id": "function:src/components/CodeBlock.tsx:CodeBlock",
+      "type": "function",
+      "name": "CodeBlock",
+      "path": "src/components/CodeBlock.tsx",
+      "summary": "Default-exported interactive code/prompt block supporting editable content, clipboard copy with confetti, and a Codex-prompt copy variant.",
+      "tags": [
+        "react",
+        "client-component",
+        "clipboard",
+        "ui-component"
+      ],
+      "complexity": "moderate",
+      "lineRange": {
+        "start": 65,
+        "end": 157
+      }
+    },
+    {
+      "id": "function:src/components/TianaSessionFooter.tsx:TianaSessionFooter",
+      "type": "function",
+      "name": "TianaSessionFooter",
+      "path": "src/components/TianaSessionFooter.tsx",
+      "summary": "Default-exported static footer component closing the workshop session.",
+      "tags": [
+        "react",
+        "ui-component",
+        "footer"
+      ],
+      "complexity": "simple",
+      "lineRange": {
+        "start": 1,
+        "end": 27
+      }
+    },
+    {
+      "id": "function:src/lib/copyWithConfetti.ts:copyWithConfetti",
+      "type": "function",
+      "name": "copyWithConfetti",
+      "path": "src/lib/copyWithConfetti.ts",
+      "summary": "Exported helper that copies text to the clipboard and triggers a positioned confetti burst from the originating event element.",
+      "tags": [
+        "typescript",
+        "utility",
+        "clipboard",
+        "confetti"
+      ],
+      "complexity": "simple",
+      "lineRange": {
+        "start": 22,
+        "end": 32
+      }
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:src/components/ProTip.tsx",
+      "target": "function:src/components/ProTip.tsx:ProTip",
+      "type": "defines",
+      "weight": 1.0,
+      "confidence": 1.0,
+      "direction": "forward"
+    },
+    {
+      "source": "function:src/components/ProTip.tsx:ProTip",
+      "target": "file:interface:src/components/ProTip.tsx:ProTipProps",
+      "type": "uses",
+      "weight": 1.0,
+      "confidence": 1.0,
+      "direction": "forward"
+    },
+    {
+      "source": "function:src/components/ProTip.tsx:ProTip",
+      "target": "file:type:src/components/ProTip.tsx:TipType",
+      "type": "uses",
+      "weight": 0.9,
+      "confidence": 1.0,
+      "direction": "forward"
+    },
+    {
+      "source": "file:src/components/StepCard.tsx",
+      "target": "function:src/components/StepCard.tsx:StepCard",
+      "type": "defines",
+      "weight": 1.0,
+      "confidence": 1.0,
+      "direction": "forward"
+    },
+    {
+      "source": "function:src/components/StepCard.tsx:StepCard",
+      "target": "file:interface:src/components/StepCard.tsx:StepCardProps",
+      "type": "uses",
+      "weight": 1.0,
+      "confidence": 1.0,
+      "direction": "forward"
+    },
+    {
+      "source": "file:src/content/tiana-ai-positioning-workshop.tsx",
+      "target": "file:src/components/CodeBlock.tsx",
+      "type": "imports",
+      "weight": 0.95,
+      "confidence": 0.98,
+      "direction": "forward"
+    },
+    {
+      "source": "file:src/content/tiana-ai-positioning-workshop.tsx",
+      "target": "file:src/components/ProTip.tsx",
+      "type": "imports",
+      "weight": 0.95,
+      "confidence": 1.0,
+      "direction": "forward"
+    },
+    {
+      "source": "file:src/content/tiana-ai-positioning-workshop.tsx",
+      "target": "file:src/components/StepCard.tsx",
+      "type": "imports",
+      "weight": 0.95,
+      "confidence": 1.0,
+      "direction": "forward"
+    },
+    {
+      "source": "file:src/content/tiana-ai-positioning-workshop.tsx",
+      "target": "function:src/content/tiana-ai-positioning-workshop.tsx:TianaAiPositioningWorkshop",
+      "type": "defines",
+      "weight": 1.0,
+      "confidence": 1.0,
+      "direction": "forward"
+    },
+    {
+      "source": "function:src/content/tiana-ai-positioning-workshop.tsx:TianaAiPositioningWorkshop",
+      "target": "function:src/content/tiana-ai-positioning-workshop.tsx:Section",
+      "type": "uses",
+      "weight": 0.98,
+      "confidence": 0.99,
+      "direction": "forward"
+    },
+    {
+      "source": "function:src/content/tiana-ai-positioning-workshop.tsx:TianaAiPositioningWorkshop",
+      "target": "function:src/content/tiana-ai-positioning-workshop.tsx:PromptCard",
+      "type": "uses",
+      "weight": 0.95,
+      "confidence": 0.99,
+      "direction": "forward"
+    },
+    {
+      "source": "function:src/content/tiana-ai-positioning-workshop.tsx:TianaAiPositioningWorkshop",
+      "target": "function:src/content/tiana-ai-positioning-workshop.tsx:TeachingCard",
+      "type": "uses",
+      "weight": 0.98,
+      "confidence": 0.99,
+      "direction": "forward"
+    },
+    {
+      "source": "function:src/content/tiana-ai-positioning-workshop.tsx:TianaAiPositioningWorkshop",
+      "target": "function:src/content/tiana-ai-positioning-workshop.tsx:StructureCard",
+      "type": "uses",
+      "weight": 0.85,
+      "confidence": 0.98,
+      "direction": "forward"
+    },
+    {
+      "source": "function:src/content/tiana-ai-positioning-workshop.tsx:TianaAiPositioningWorkshop",
+      "target": "function:src/content/tiana-ai-positioning-workshop.tsx:BulletList",
+      "type": "uses",
+      "weight": 0.9,
+      "confidence": 0.99,
+      "direction": "forward"
+    },
+    {
+      "source": "function:src/content/tiana-ai-positioning-workshop.tsx:TianaAiPositioningWorkshop",
+      "target": "function:src/content/tiana-ai-positioning-workshop.tsx:WorkshopRecordingCard",
+      "type": "uses",
+      "weight": 0.8,
+      "confidence": 0.98,
+      "direction": "forward"
+    },
+    {
+      "source": "function:src/content/tiana-ai-positioning-workshop.tsx:TianaAiPositioningWorkshop",
+      "target": "function:src/components/ProTip.tsx:ProTip",
+      "type": "uses",
+      "weight": 0.85,
+      "confidence": 0.95,
+      "direction": "forward"
+    },
+    {
+      "source": "function:src/content/tiana-ai-positioning-workshop.tsx:TianaAiPositioningWorkshop",
+      "target": "function:src/components/StepCard.tsx:StepCard",
+      "type": "uses",
+      "weight": 0.8,
+      "confidence": 0.95,
+      "direction": "forward"
+    },
+    {
+      "source": "function:src/content/tiana-ai-positioning-workshop.tsx:TianaAiPositioningWorkshop",
+      "target": "file:const:src/content/tiana-ai-positioning-workshop.tsx:LEAVE_WITH",
+      "type": "uses",
+      "weight": 0.9,
+      "confidence": 0.99,
+      "direction": "forward"
+    },
+    {
+      "source": "function:src/content/tiana-ai-positioning-workshop.tsx:PromptCard",
+      "target": "file:src/components/CodeBlock.tsx",
+      "type": "uses",
+      "weight": 0.95,
+      "confidence": 0.99,
+      "direction": "forward"
+    },
+    {
+      "source": "function:src/content/tiana-ai-positioning-workshop.tsx:Section",
+      "target": "function:src/content/tiana-ai-positioning-workshop.tsx:BulletList",
+      "type": "uses",
+      "weight": 0.7,
+      "confidence": 0.85,
+      "direction": "forward"
+    },
+    {
+      "source": "function:src/content/tiana-ai-positioning-workshop.tsx:TeachingCard",
+      "target": "function:src/content/tiana-ai-positioning-workshop.tsx:BulletList",
+      "type": "uses",
+      "weight": 0.7,
+      "confidence": 0.85,
+      "direction": "forward"
+    },
+    {
+      "source": "function:src/content/tiana-ai-positioning-workshop.tsx:StructureCard",
+      "target": "function:src/content/tiana-ai-positioning-workshop.tsx:BulletList",
+      "type": "uses",
+      "weight": 0.65,
+      "confidence": 0.8,
+      "direction": "forward"
+    },
+    {
+      "source": "file:src/app/layout.tsx",
+      "target": "file:src/app/globals.css",
+      "type": "imports",
+      "weight": 0.9,
+      "confidence": 0.99,
+      "direction": "forward"
+    },
+    {
+      "source": "file:src/app/page.tsx",
+      "target": "file:src/components/TianaSessionFooter.tsx",
+      "type": "imports",
+      "weight": 0.8,
+      "confidence": 0.99,
+      "direction": "forward"
+    },
+    {
+      "source": "file:src/components/CodeBlock.tsx",
+      "target": "file:src/lib/copyWithConfetti.ts",
+      "type": "imports",
+      "weight": 0.8,
+      "confidence": 0.99,
+      "direction": "forward"
+    },
+    {
+      "source": "file:src/app/globals.css",
+      "target": "file:tailwind.config.ts",
+      "type": "depends-on",
+      "weight": 0.7,
+      "confidence": 0.85,
+      "direction": "forward"
+    },
+    {
+      "source": "file:src/app/layout.tsx",
+      "target": "file:tailwind.config.ts",
+      "type": "depends-on",
+      "weight": 0.6,
+      "confidence": 0.8,
+      "direction": "forward"
+    },
+    {
+      "source": "file:postcss.config.mjs",
+      "target": "file:src/app/globals.css",
+      "type": "processes",
+      "weight": 0.7,
+      "confidence": 0.85,
+      "direction": "forward"
+    },
+    {
+      "source": "file:postcss.config.mjs",
+      "target": "file:tailwind.config.ts",
+      "type": "depends-on",
+      "weight": 0.75,
+      "confidence": 0.9,
+      "direction": "forward"
+    },
+    {
+      "source": "file:src/components/CodeBlock.tsx",
+      "target": "file:src/app/globals.css",
+      "type": "uses-styles",
+      "weight": 0.6,
+      "confidence": 0.75,
+      "direction": "forward"
+    },
+    {
+      "source": "file:src/app/layout.tsx",
+      "target": "file:next.config.ts",
+      "type": "configured-by",
+      "weight": 0.5,
+      "confidence": 0.7,
+      "direction": "forward"
+    },
+    {
+      "source": "file:src/components/TianaSessionFooter.tsx",
+      "target": "file:src/app/globals.css",
+      "type": "uses-styles",
+      "weight": 0.5,
+      "confidence": 0.7,
+      "direction": "forward"
+    },
+    {
+      "source": "file:src/app/page.tsx",
+      "target": "file:src/components/CodeBlock.tsx",
+      "type": "cross-batch-dependency",
+      "weight": 0.7,
+      "confidence": 0.85,
+      "note": "CodeBlock is used by TianaAiPositioningWorkshop (batch 1)",
+      "direction": "forward"
+    },
+    {
+      "source": "file:src/components/CodeBlock.tsx",
+      "target": "file:tailwind.config.ts",
+      "type": "depends-on",
+      "weight": 0.5,
+      "confidence": 0.7,
+      "direction": "forward"
+    },
+    {
+      "source": "file:src/app/page.tsx",
+      "target": "file:src/content/tiana-ai-positioning-workshop.tsx",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7,
+      "recoveredFromImportMap": true
+    }
+  ],
+  "layers": [
+    {
+      "id": "layer:config",
+      "name": "Build Configuration",
+      "description": "Next.js, Tailwind, PostCSS, and TypeScript configuration files that control build behavior, styling framework, and type checking",
+      "nodeIds": [
+        "config:next.config.ts",
+        "config:tailwind.config.ts",
+        "config:postcss.config.mjs",
+        "config:tsconfig.json",
+        "config:package.json"
+      ]
+    },
+    {
+      "id": "layer:styling",
+      "name": "Design System & Styling",
+      "description": "Global CSS and Tailwind theme configuration including color palette (dark, cream, purple, pink), typography, keyframe animations (float-slow, float-slower, gradient-shift, fade-in-up, glow-pulse, shimmer), and design tokens",
+      "nodeIds": [
+        "file:src/app/globals.css"
+      ]
+    },
+    {
+      "id": "layer:utilities",
+      "name": "Utilities & Helpers",
+      "description": "Reusable utility functions and helper modules used by components and pages",
+      "nodeIds": [
+        "file:src/lib/copyWithConfetti.ts"
+      ]
+    },
+    {
+      "id": "layer:components",
+      "name": "Reusable Components",
+      "description": "Presentational React components that are composed into pages and content sections. Includes interactive elements (CodeBlock with copy-to-clipboard), callout boxes (ProTip), step indicators (StepCard), and footer (TianaSessionFooter)",
+      "nodeIds": [
+        "file:src/components/CodeBlock.tsx",
+        "file:src/components/ProTip.tsx",
+        "file:src/components/StepCard.tsx",
+        "file:src/components/TianaSessionFooter.tsx"
+      ]
+    },
+    {
+      "id": "layer:content",
+      "name": "Pages & Content",
+      "description": "Top-level pages and content modules. Layout.tsx provides the root HTML structure with metadata and animated background decorations. Page.tsx is the home page entry point. tiana-ai-positioning-workshop.tsx contains the main workshop content with multiple sections, prompt cards, and step-by-step exercises",
+      "nodeIds": [
+        "file:src/app/layout.tsx",
+        "file:src/app/page.tsx",
+        "file:src/content/tiana-ai-positioning-workshop.tsx"
+      ]
+    }
+  ],
+  "tour": [
+    {
+      "order": 1,
+      "title": "Project Overview",
+      "description": "Start here to understand the project's purpose, structure, and deployment strategy. The README explains this is Tiyana Gori's standalone workshop site with interactive, editable prompt blocks.",
+      "nodeIds": [
+        "document:README.md"
+      ]
+    },
+    {
+      "order": 2,
+      "title": "Application Entry Point & Root Layout",
+      "description": "These are the foundational pages where everything starts. page.tsx renders the workshop content, while layout.tsx sets up the HTML structure, metadata, typography, and the animated aurora background that defines the visual aesthetic.",
+      "nodeIds": [
+        "file:src/app/page.tsx",
+        "file:src/app/layout.tsx"
+      ]
+    },
+    {
+      "order": 3,
+      "title": "Global Design System & Styling",
+      "description": "The visual foundation of the site. globals.css contains all base styles and animations (aurora floats, shimmer effects, glow pulses). tailwind.config.ts extends Tailwind with custom colors (purple #8B79D4, cream, pink), animations, and the Plus Jakarta Sans font family. Understanding these two files shows you how the cohesive dark-mode aesthetic is built.",
+      "nodeIds": [
+        "file:src/app/globals.css",
+        "file:tailwind.config.ts"
+      ]
+    },
+    {
+      "order": 4,
+      "title": "Reusable Component Library",
+      "description": "Four essential UI components compose the workshop page: CodeBlock (interactive prompt editor with confetti copy), StepCard (numbered step containers), ProTip (callout boxes for tips/warnings), and TianaSessionFooter (footer with links). Each uses the same color palette and follows a consistent visual language.",
+      "nodeIds": [
+        "file:src/components/CodeBlock.tsx",
+        "file:src/components/StepCard.tsx",
+        "file:src/components/ProTip.tsx",
+        "file:src/components/TianaSessionFooter.tsx"
+      ]
+    },
+    {
+      "order": 5,
+      "title": "Interactive Features & Utilities",
+      "description": "The copyWithConfetti utility brings delight to the copy-to-clipboard action. It uses canvas-confetti to animate particles on click, with color origin computed from the button's position. This is where user interaction meets visual feedback.",
+      "nodeIds": [
+        "file:src/lib/copyWithConfetti.ts"
+      ]
+    },
+    {
+      "order": 6,
+      "title": "Workshop Content Structure",
+      "description": "The largest file in the project (~1316 lines). This file defines the entire workshop layout using Section, PromptCard, and TeachingCard sub-components. It orchestrates the visual hierarchy, integrates all UI components, and contains the actual workshop content. This is where the page content is authored and organized.",
+      "nodeIds": [
+        "file:src/content/tiana-ai-positioning-workshop.tsx"
+      ]
+    },
+    {
+      "order": 7,
+      "title": "Build Configuration",
+      "description": "The supporting configuration files that enable the Next.js + TypeScript + Tailwind stack. next.config.ts configures Turbopack, tsconfig.json sets TypeScript strict mode and path aliases (@/ for imports), and package.json defines dependencies and scripts. These ensure the developer experience and build process work smoothly.",
+      "nodeIds": [
+        "file:next.config.ts",
+        "file:tsconfig.json",
+        "file:package.json"
+      ]
+    }
+  ]
+}
